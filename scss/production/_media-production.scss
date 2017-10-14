@@ -1,0 +1,29 @@
+@include mq("tablet-small", max) {
+	.production {
+		height: auto;
+		.product {
+			padding-top: 150px;
+			width: 100%;
+			height: auto;
+			padding-top: 50px;
+			.product-item {
+				width: 150px;
+				height: 150px;
+				margin-bottom: 20px;
+				p { font-size: 0.85em; }
+			}
+		}
+	}
+}
+@include mq("850", max) {
+	.production {
+		h2 { font-size: 2.8em;}
+	}
+}
+@include mq("phone-wide", max) {
+	.production {
+		h2 { font-size: 2.2em;}
+	}
+
+	
+}

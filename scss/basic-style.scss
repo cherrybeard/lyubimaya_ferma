@@ -1,0 +1,38 @@
+$min-height: 700px;
+$green: #79b50b;
+$width: 850px;
+
+h1, h2 {
+	font-size: 4.375em;
+	font-weight: normal;
+}
+%underline {
+	text-align: center;
+	width: 600px;
+	line-height: 1.29;
+	padding-bottom: 20px;
+	position: relative;
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 45%;
+		width: 61px;
+		height: 3px;
+		background-color: #222;
+	}
+}
+%green-button {
+	width: 247px;
+	height: 52px;
+	border-radius: 8px;
+	background-color: $green;
+	border: none;
+	cursor: pointer;
+	
+	font-family: Tahoma;
+	font-size: 1.18em;
+	line-height: 1.89;
+	text-align: center;
+	color: #ffffff;
+}

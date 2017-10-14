@@ -1,0 +1,7 @@
+@include mq("850", max) {
+	%underline { width: 300px;
+		&:after {
+			left: 42%;
+		}
+	}
+}

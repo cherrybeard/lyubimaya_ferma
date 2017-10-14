@@ -1,0 +1,25 @@
+.our-live
+	h2 Наша жизнь 
+	.news
+		figure.news-item
+			- var title = "День рождения рынка"
+			- var link = "../img/birthday.jpg"
+			img(src="#{link}", alt="#{title}")
+			h3 #{title}
+			span.date 23 сентября
+			p 15 сентября исполнилось 2 года «Любимой ферме». В этот день у нас была особая программа.
+		figure.news-item
+			- var title = "Мастер-классы"
+			- var link = "../img/master-classes.jpg"				
+			img(src="#{link}", alt="#{title}")
+			h3 #{title}
+			span.date 19 сентября
+			p Список предстоящих мастер-классов, запланированых на октябрь.
+		figure.news-item
+			- var title = "Кулинарные шоу"
+			- var link = "../img/cooking-shows.jpg"
+			img(src="#{link}", alt="#{title}")
+			h3 #{title}
+			span.date 10 сентября
+			p Смотреть, как умело делает свою работу профессионал всегда завораживает.
+	button.more-news Еще новости

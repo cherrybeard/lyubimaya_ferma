@@ -1,0 +1,28 @@
+div, p, body, button, h1, h2, h3, h4, img, hr, li, ul, span, section, a, nav, form, option, select, label, input, button, header, footer{
+	margin: 0;
+	padding: 0;
+}
+p, h1, h2, h3, span {
+	cursor: default;
+}
+html {
+	font-size: 16px;
+	line-height: 1.14;
+	font-family: Lora;
+}
+
+
+@import "UI/fonts";
+@import "UI/color";
+@import "mixins";
+@import "basic-style", "_media-basic-style";
+
+
+
+
+@import "header/header", "header/_media-header";
+@import "footer/footer";
+@import "mission/mission", "mission/_media-mission";
+@import "production/production","production/_media-production";
+@import "our-live/our-live", "our-live/_media-our-live";
+@import "expertise/expertise", "expertise/_media-expertise";

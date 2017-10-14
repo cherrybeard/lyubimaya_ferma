@@ -1,0 +1,51 @@
+@include mq("tablet-wide", max) {
+	.mission {
+		height: auto;
+		font-size: 10px;
+		.about {
+			padding-bottom: 50px;
+			p {
+			width: 90%;
+			text-align: justify;}
+		}
+		.feature {
+			width: 95%;
+			background:transparent url('../img/more.jpg') center top/250px 200px no-repeat;
+			height: auto;
+			padding-top: 200px;
+			.right {
+				width: 100%;
+				padding-right: 0;
+				padding-bottom: 20px;
+				p {font-size: 2.1em;}
+			}
+			.attention-block { 
+				width: 90%;
+				margin: 0 auto;
+				height: 200px;
+				padding: 10px;
+				bottom: auto;
+				left: auto;
+				position: relative;
+				margin-bottom: 20px;
+			}
+		}
+		.company { 
+			background:transparent url('../img/love.jpg') center top/400px 350px no-repeat;
+			padding-top: 370px;
+			height: auto;
+			.left {
+				width: 90%;
+				margin: 0 auto;
+				span { padding-top: 30px; &:before { top: 10px;}}
+			}
+		}
+	}
+}
+@include mq("1281", max) {
+	.mission {
+		.feature { width: 90%; }
+		.company { padding-left: 5%; }
+	
+	}
+}

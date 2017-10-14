@@ -1,0 +1,27 @@
+.expertise {
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-sizing: border-box;
+	padding: 0 2%;
+	background:#fafafa url('../img/experts.jpg') left center/683px 437px no-repeat;
+	h2 { 
+		width: auto;
+		font-weight: normal;
+		@extend %underline;
+		text-align: left;
+		&:after { left: 0; }
+	}
+	.right {
+		align-self: flex-end;
+		width: 500px;
+	}
+	p {
+		padding-top: 15px;
+		font-family: Tahoma;
+		font-size: 1.25em;
+		line-height: 1.4;
+		color: #444444;
+	}
+}

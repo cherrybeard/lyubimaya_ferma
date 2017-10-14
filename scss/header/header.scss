@@ -1,0 +1,31 @@
+.header {
+	height: 100vh;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	min-height: $min-height;
+	background:transparent url('../img/header.jpg') left top/cover no-repeat;
+	.logo {
+		background:transparent url('../img/logo.svg') left top/cover no-repeat;
+		margin: 0 auto;
+		left: 45vw;
+		width: 150px;
+		height: 100px;
+		font-size: 0;
+	}
+	h1 { 
+		margin: 0 auto;
+		padding-top: 50px;
+		text-align: center;
+		color: #fff;
+		width: 50vw;}
+	p {
+		box-sizing: content-box;
+		padding-top: 30px;
+		font-family: Tahoma;
+		font-size: 1.375em;
+		text-align: center;
+		color: #ddd;}
+
+}
