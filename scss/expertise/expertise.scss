@@ -8,7 +8,6 @@
 	background:#fafafa url('../img/experts.jpg') left center/683px 437px no-repeat;
 	h2 { 
 		width: auto;
-		font-weight: normal;
 		@extend %underline;
 		text-align: left;
 		&:after { left: 0; }

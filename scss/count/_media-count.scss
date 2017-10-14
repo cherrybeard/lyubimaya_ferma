@@ -1,0 +1,13 @@
+@include mq("850", max) {
+	.count {
+		padding: 20px 0;
+		flex-direction: column;
+		strong { font-size: 3em; }
+	}	
+}
+@include mq("desktop-wide", min) {
+	.count {
+		width: 80%;
+		margin: 0 auto;
+	}
+}

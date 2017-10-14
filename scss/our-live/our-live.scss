@@ -7,9 +7,7 @@
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	h2 {
-		@extend %underline;
-	}
+	h2 { @extend %underline; }
 	.news {
 		display: flex;
 		justify-content: center;

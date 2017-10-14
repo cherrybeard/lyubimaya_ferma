@@ -1,0 +1,39 @@
+.tenants {
+	height: 700px;
+	background-color: #fafafa;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	h2 { @extend %underline;}
+	.call-back { @extend %green-button;}
+	p {
+		padding: 40px 0;
+		font-size: 2em;
+		text-align: center;
+		color: #444444;
+		width: 784px;
+		span { color: $green;}
+	}
+	.features {
+		display: flex;
+		justify-content: space-around;
+		width: 784px;
+		padding-bottom: 50px;
+	}
+	.features-item {
+		width: 200px;
+		padding-top: 120px;
+		height: 100%;
+		font-family: Tahoma;
+		font-size: 1.125em;
+		line-height: 1.44;
+		text-align: center;
+		color: #444444;
+	}
+	.free { color: $green; background:transparent url('../img/5days.svg') center top no-repeat; }
+	.place { background:transparent url('../img/ready.svg') center 25px no-repeat; }
+	.seo { background:transparent url('../img/marketing.svg') center 25px no-repeat;}
+	
+}

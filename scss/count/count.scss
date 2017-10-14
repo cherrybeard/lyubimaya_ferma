@@ -1,0 +1,24 @@
+.count {
+	height: 400px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	strong {
+		@extend %underline;
+		display: inline-block;
+		width: 300px;
+		font-size: 120px;
+		line-height: 0.75;
+		color: $green;
+		&:after { background-color: $green; left: 40%;}
+	}
+	p {
+		width: 240px;
+		margin: 0 auto;
+		padding-top: 10px;
+		font-size: 1.25em;
+		line-height: 1.2;
+		text-align: center;
+		color: #666666;
+	}
+}
