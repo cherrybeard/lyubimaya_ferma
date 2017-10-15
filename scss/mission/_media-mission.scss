@@ -1,9 +1,16 @@
+@include mq("desktop", max) {
+	.mission .company {
+		background-size: 650px;
+		// .left { width: 100%;}
+	}
+}
 @include mq("tablet-wide", max) {
 	.mission {
 		height: auto;
 		font-size: 14px;
-		padding: 0 $mobile-padding;
 		.about {
+			padding-left: $mobile-padding;
+			padding-right: $mobile-padding;
 			h2 { width: 100%;text-align: left;}
 			h2:after { left: 0;}
 			padding-bottom: 50px;
@@ -15,14 +22,17 @@
 			.cont { display: inline-block; padding-top: 20px;}
 		}
 		.feature {
+			box-sizing: border-box;
+			padding-left: $mobile-padding;
+			padding-right: $mobile-padding;
 			width: 100%;
 			background:transparent url('../img/more.jpg') center top/250px 200px no-repeat;
 			height: auto;
-			padding-top: 200px;
+			padding-bottom: 50px;
 			.right {
 				width: 100%;
-				padding-right: 0;
-				padding-bottom: 20px;
+				padding-top: 230px;
+				padding-bottom: 40px;
 			}
 			.attention-block { 
 				width: 100%;
@@ -33,12 +43,12 @@
 				position: relative;
 				margin-bottom: 0;
 				font-size: 1.25em;
-				padding: 20px 0;
+				padding: 40px 0 0 0;
 				&:before {
 					content: "";
 					position: absolute;
 					top: 0px;
-					left: 0;
+					left: 0px;
 					width: 61px;
 					height: 3px;
 					background-color: $green;
@@ -47,10 +57,13 @@
 			}
 		}
 		.company {
-			background:transparent url('../img/love.jpg') center top/400px 350px no-repeat;
-			padding: 370px 0 20px 0;
+			background:transparent url('../img/love.jpg') center top/450px 280px no-repeat;
+			padding: 310px 0 20px 0;
 			height: auto;
 			.left {
+				width: 100%;
+				padding-left: $mobile-padding;
+				padding-right: $mobile-padding;
 				span { padding-top: 20px; font-size: 1.3em; &:before { top: 0px;}}
 			}
 		}

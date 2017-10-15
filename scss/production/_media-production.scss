@@ -1,12 +1,14 @@
 @include mq("tablet-small", max) {
 	.production {
+		padding: 0 $mobile-padding 40px $mobile-padding;
 		height: auto;
 		background-position: center;
 		.product {
 			width: 100%;
 			height: auto;
 			.product-item {
-				width: 100px;
+				padding: 0 10px;
+				box-sizing: border-box;
 				height: auto;
 				padding-top: 100px;
 				margin-bottom: 20px;
