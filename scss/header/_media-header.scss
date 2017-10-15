@@ -1,6 +1,7 @@
 @include mq("tablet", max) {
 	.header {
 		min-height: 0;
+		height: 85vh;
 		font-size: 10px;
 		h1 {
 			width: 95%;

@@ -1,35 +1,34 @@
 .feature {
-		height: 400px;
-		width: 70%;
-		font-family: Tahoma;
-		position: relative;
+	height: 400px;
+	width: 90%;
+	font-family: Tahoma;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background:transparent url('../img/more.jpg') left center/450px 400px no-repeat;
+	
+	.right {
+		align-self: flex-end;
+		width: 520px;
+	}
+	.attention-block {
+		position: absolute;
+		width: 684px;
+		height: 231px;
+		border: solid 3px $green;
 		display: flex;
-		flex-direction: column;
+		align-items: center;
 		justify-content: center;
-		background:transparent url('../img/more.jpg') left center/450px 400px no-repeat;
-		
-		.right {
-			align-self: flex-end;
-			width: 520px;
+		box-sizing: border-box;
+		padding: 0 85px;
+		bottom: -250px;
+		left: 20%;
+		p {
+			font-family: Lora;
+			text-align: left;
+			color: #222222;
 		}
-		.attention-block {
-			position: absolute;
-			width: 684px;
-			height: 231px;
-			border: solid 3px $green;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			box-sizing: border-box;
-			padding: 0 85px;
-			bottom: -250px;
-			left: 20%;
-			p {
-				font-family: Lora;
-				font-size: 2em;
-				text-align: left;
-				color: #222222;
-			}
-			span { color: $green;}
-}
+		span { color: $green;}
+	}
 }

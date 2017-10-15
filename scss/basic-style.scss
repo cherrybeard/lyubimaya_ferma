@@ -1,10 +1,18 @@
 $min-height: 700px;
 $green: #79b50b;
 $width: 850px;
+$mobile-padding: 20px;
 
 h1, h2 {
 	font-size: 4.375em;
 	font-weight: normal;
+}
+p {
+	font-size: 1.25em;
+	line-height: 1.4;
+	text-align: left;
+	color: #444444;
+	font-family: Tahoma, sans-serif;
 }
 %underline {
 	text-align: center;

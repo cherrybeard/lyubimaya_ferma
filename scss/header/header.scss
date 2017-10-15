@@ -5,7 +5,11 @@
 	flex-direction: column;
 	justify-content:center;
 	min-height: $min-height;
-	background:transparent url('../img/header.jpg') left top/cover no-repeat;
+	background:
+		url('../img/header_shape%20copy.png') left bottom/7% repeat-x,
+		transparent url('../img/header.jpg') left top/cover no-repeat;
+
+
 	.logo {
 		background:transparent url('../img/logo.svg') left top/cover no-repeat;
 		margin: 0 auto;

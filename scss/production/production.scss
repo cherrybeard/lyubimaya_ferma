@@ -5,6 +5,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	h2 {
 		@extend %underline;
 		padding-top: 50px;
@@ -12,7 +13,6 @@
 		&:after { background-color: white;}
 	}
 	.product {
-		padding-top: 50px;
 		display: flex;
 		justify-content: space-around;
 		flex-flow: wrap;
@@ -20,18 +20,19 @@
 		width: 700px;
 		.product-item {
 			position: relative;
-			border: 1px solid white;
-			height: 200px;
 			width: 220px;
-			display: flex;
-			justify-content: center;
-			p {
-				width: 150px;
-				height: 40px;
-				align-self: flex-end;
-				font-size: 1.125em;
-				text-align: center;
-				color: #fff;}
+			padding-top: 150px;
+			height: 20px;
+			font-family: Tahoma, sans-serif;
+			font-size: 1.125em;
+			text-align: center;
+			color: #fff;
+		}
+		$list: (veg, meat, candy, tea, milk, soap);
+		@each $item in $list {
+			.#{$item} {
+				background:transparent url('../img/Icons/#{$item}.png') center center/40% no-repeat;
+			}
 		}
 	}
 }

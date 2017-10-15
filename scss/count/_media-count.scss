@@ -1,9 +1,17 @@
 @include mq("850", max) {
 	.count {
-		padding: 20px 0;
+		padding: 20px 20px;
 		flex-direction: column;
-		strong { font-size: 3em; }
+		align-items: flex-start;
+		strong { 
+			text-align: left;
+			font-size: 3em; &:after { content: normal;}}
+	p {
+		padding-top: 0;
+		text-align: left;
+		margin: 0;}
 	}	
+
 }
 @include mq("desktop-wide", min) {
 	.count {

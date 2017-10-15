@@ -10,8 +10,3 @@
 		}
 	}
 }
-@include mq("850", max) {
-	.our-live h2 {
-		font-size: 2.8em;
-	}
-}

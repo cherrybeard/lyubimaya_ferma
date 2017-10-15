@@ -1,5 +1,8 @@
 @include mq("850", max) {
-	%underline { width: 300px;
+	p { font-size: 1em;}
+	%underline { 
+		font-size: 2.8em;
+		width: 300px;
 		&:after {
 			left: 42%;
 		}

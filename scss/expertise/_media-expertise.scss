@@ -6,12 +6,12 @@
 }
 @include mq("desktop", max) {
 	.expertise { 
-		padding: 0 10px 30px 10px;
-		height: 600px;
+		padding: 20px $mobile-padding 40px $mobile-padding;
+		height: 680px;
+		font-size: 14px;
 		flex-direction: row;
-		background:#fafafa url('../img/experts.jpg') center top/341px 218px no-repeat;
-		h2 {
-			font-size: 2.8em;
-		}
+		background:#fafafa url('../img/experts.jpg') center bottom/100% 218px no-repeat;
+		.right { align-self: flex-start;}
+		
 	}
 }
