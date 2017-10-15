@@ -8,9 +8,11 @@
 			h2:after { left: 0;}
 			padding-bottom: 50px;
 			p {
+				font-size: 1.25em;
 				padding-top: 20px;
 				width: 100%;
 				text-align: left;}
+			.cont { display: inline-block; padding-top: 20px;}
 		}
 		.feature {
 			width: 100%;
@@ -25,16 +27,17 @@
 			.attention-block { 
 				width: 100%;
 				border: none;
-				height: 150px;
-				padding: 0;
+				height: auto;
 				bottom: auto;
 				left: auto;
 				position: relative;
 				margin-bottom: 0;
+				font-size: 1.25em;
+				padding: 20px 0;
 				&:before {
 					content: "";
 					position: absolute;
-					top: 10px;
+					top: 0px;
 					left: 0;
 					width: 61px;
 					height: 3px;

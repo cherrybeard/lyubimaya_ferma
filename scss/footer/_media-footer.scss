@@ -1,0 +1,23 @@
+@include mq("tablet-wide", max) {
+	.footer {
+		height: 800px;
+		
+		// padding-left: $mobile-padding;
+
+
+		.contacts {
+			position: relative;
+			left: auto;
+			top: auto;
+			width: 100%;
+			height: 300px;
+			box-sizing: border-box;
+			padding-left: $mobile-padding;
+		}
+		h2 {
+			font-size: 1.875em;
+			&:after { left: 0;}
+		}
+		a, p, .map-link { padding-left: 0;}
+	}
+}

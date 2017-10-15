@@ -12,8 +12,12 @@
 	p {
 		padding-top: 30px;
 		text-align: center;
+		font-family: $second;
+		font-size: 2em;
 		width: $width;
+		color: #444;
 		span { color: $green;}
 	}
+	.cont {color: #444;}
 
 }

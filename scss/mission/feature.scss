@@ -17,18 +17,15 @@
 		width: 684px;
 		height: 231px;
 		border: solid 3px $green;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		box-sizing: border-box;
 		padding: 0 85px;
 		bottom: -250px;
 		left: 20%;
-		p {
-			font-family: Lora;
-			text-align: left;
-			color: #222222;
-		}
+		font-family: $second;
+		padding: 60px 50px 50px 100px;
+		text-align: left;
+		font-size: 2em;
+		color: #222;
 		span { color: $green;}
 	}
 }

@@ -8,7 +8,7 @@ p, h1, h2, h3, span {
 html {
 	font-size: 16px;
 	line-height: 1.14;
-	font-family: Lora;
+	font-family: Tahoma, sans-serif;
 }
 
 
@@ -21,10 +21,11 @@ html {
 
 
 @import "header/header", "header/_media-header";
-@import "footer/footer";
+
 @import "mission/mission", "mission/_media-mission";
 @import "production/production","production/_media-production";
 @import "our-live/our-live", "our-live/_media-our-live";
 @import "expertise/expertise", "expertise/_media-expertise";
 @import "count/count", "count/_media-count";
 @import "tenants/tenants", "tenants/_media-tenants";
+@import "footer/footer", "footer/_media-footer";
