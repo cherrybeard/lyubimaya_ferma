@@ -5,20 +5,15 @@ div, p, body, button, h1, h2, h3, h4, img, hr, li, ul, span, section, a, nav, fo
 p, h1, h2, h3, span {
 	cursor: default;
 }
-html {
-	font-size: 16px;
-	line-height: 1.14;
-	font-family: Tahoma, sans-serif;
-}
 
+input {
+	font-family: inherit;
+}
 
 @import "UI/fonts";
 @import "UI/color";
 @import "mixins";
 @import "basic-style", "_media-basic-style";
-
-
-
 
 @import "header/header", "header/_media-header";
 

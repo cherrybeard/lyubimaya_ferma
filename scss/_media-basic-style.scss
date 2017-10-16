@@ -1,6 +1,9 @@
-@include mq("850", max) {
-	p { font-size: 1em;}
-	%underline { 
+@include mq("phone-wide", max) {
+	html {
+		font-size: 16px;
+	}
+
+	%underline {
 		font-size: 2.8em;
 		width: 300px;
 		&:after {

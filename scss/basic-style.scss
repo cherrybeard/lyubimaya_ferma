@@ -1,21 +1,20 @@
-$min-height: 700px;
+$min-height: 600px;
 $green: #79b50b;
 $width: 850px;
 $mobile-padding: 20px;
-$second: Lora;
+
+html {
+	font-family: $font-primary;
+	font-size: 20px;
+	line-height: 1.4;
+}
 
 h1, h2 {
-	font-size: 4.375em;
-	font-weight: normal;
-	font-family: Lora;
+	font-weight: inherit;
+	font-size: 3.5rem;
+	line-height: 1.15;
 }
-p {
-	font-size: 1.25em;
-	line-height: 1.4;
-	text-align: left;
-	color: #444444;
-	font-family: Tahoma, sans-serif;
-}
+
 %underline {
 	text-align: center;
 	width: 600px;
@@ -23,6 +22,7 @@ p {
 	padding-bottom: 20px;
 	position: relative;
 	font-weight: normal;
+
 	&:after {
 		content: "";
 		position: absolute;
@@ -32,6 +32,7 @@ p {
 		height: 3px;
 		background-color: #222;
 	}
+
 }
 %green-button {
 	width: 247px;
@@ -40,7 +41,7 @@ p {
 	background-color: $green;
 	border: none;
 	cursor: pointer;
-	
+
 	font-family: Tahoma;
 	font-size: 1.18em;
 	line-height: 1.89;
