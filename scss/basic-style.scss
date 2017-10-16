@@ -40,10 +40,16 @@ p {
 	background-color: $green;
 	border: none;
 	cursor: pointer;
-	
-	font-family: Tahoma;
+
 	font-size: 1.18em;
 	line-height: 1.89;
 	text-align: center;
 	color: #ffffff;
+	
 }
+.success {
+	$color: #7ED321;
+	background-color: $color;
+	border-color: $color;}
+
+.hide { display: none;}

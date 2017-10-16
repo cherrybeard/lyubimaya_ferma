@@ -7,10 +7,10 @@
 @include mq("desktop", max) {
 	.expertise { 
 		padding: 20px $mobile-padding 40px $mobile-padding;
-		height: 530px;
+		height: 570px;
 		font-size: 14px;
 		flex-direction: row;
-		background:#fafafa url('../img/experts.jpg') center bottom/320px 218px no-repeat;
+		background:#fafafa url('../img/experts.jpg') center bottom/400px 270px no-repeat;
 		.right { align-self: flex-start;}
 		
 	}
