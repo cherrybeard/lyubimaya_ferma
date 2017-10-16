@@ -1,10 +1,13 @@
-@include mq("tablet-wide", max) {
+@include mq("850", max) {
+	.footer h2 {
+		font-size: 2rem;
+		&:after { left: 20px;}
+	}
+}
+
+@include mq("tablet-small", max) {
 	.footer {
 		height: 800px;
-		
-		// padding-left: $mobile-padding;
-
-
 		.contacts {
 			position: relative;
 			left: auto;

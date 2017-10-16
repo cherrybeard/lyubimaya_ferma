@@ -1,0 +1,34 @@
+.callback-form {
+	.text-input { 
+		vertical-align: bottom;
+		height: 52px;
+		width: 270px;
+		display: inline-block;
+		border: 2px solid #AAA;
+		box-sizing: border-box;
+		padding: 7px 0 7px 20px;
+		border-radius: 8px;
+		background: white;}
+		
+	input {
+		background-color: #fff; 
+		outline: none;
+		border: none;
+		width: 90%;
+		border-radius: 8px;
+		font-size: 1.18em;
+		line-height: 1.89;}	
+}
+
+
+
+
+@include mq("tablet-small", max) {
+	.callback-form { width: 247px;}
+	.callback-form .text-input {
+		width: 247px;
+		margin-bottom: 10px; 
+	}
+
+	
+}

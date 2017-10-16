@@ -1,4 +1,8 @@
 @include mq("850", max) {
+	.count strong { font-size: 4em; width: 220px;}
+}
+
+@include mq("tablet", max) {
 	.count {
 		padding: 20px 20px;
 		flex-direction: column;

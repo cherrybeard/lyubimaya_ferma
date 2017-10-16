@@ -14,9 +14,9 @@ input {
 @import "UI/color";
 @import "mixins";
 @import "basic-style", "_media-basic-style";
+@import "UI/text-input.scss";
 
 @import "header/header", "header/_media-header";
-
 @import "mission/mission", "mission/_media-mission";
 @import "production/production","production/_media-production";
 @import "our-live/our-live", "our-live/_media-our-live";
