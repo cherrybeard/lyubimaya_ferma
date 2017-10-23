@@ -1,0 +1,31 @@
+.intro {
+	width: 80%;
+	max-width: 840px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+	h2 {
+		@extend %underlined;
+		color: black;
+	}
+
+	p {
+		@extend %intro;
+		margin-top: 30px;
+	}
+
+	@include mq("tablet", max) {
+		text-align: left;
+
+		h2::after {
+			left: 0;
+			transform: none;
+		}
+
+		.cont {
+			display: block;
+			margin-top: 0.5em;
+		}
+	}
+}

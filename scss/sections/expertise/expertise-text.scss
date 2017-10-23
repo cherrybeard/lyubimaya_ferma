@@ -1,0 +1,41 @@
+%expertise-text {
+	$width: 480px;
+	padding: 80px 0;
+	box-sizing: border-box;
+	position: relative;
+	width: $width;
+
+	&::after {
+		content: '';
+		position: absolute;
+		width: 720px;
+		height: 440px;
+		background: url('../img/expertise.jpg') center/contain no-repeat;
+		right: $width + 20px;
+		bottom: 0;
+	}
+
+	@include mq("desktop", max) {
+		$width: 400px;
+		width: $width;
+		padding: 80px 0 40px;
+
+		&::after {
+			right: $width + 20px;
+		}
+	}
+
+	@include mq("phone-wide", max) {
+		width: auto;
+		padding: 2.5rem 0 0;
+
+		&::after {
+			position: static;
+			display: block;
+			width: 100%;
+			height: 0;
+			padding-top: 60%;
+			margin-top: 30px;
+		}
+	}
+}

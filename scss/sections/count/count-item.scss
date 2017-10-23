@@ -1,0 +1,37 @@
+.count-item {
+	strong {
+		@extend %underlined;
+		display: inline-block;
+		font-family: $font-secondary;
+		font-size: 6rem;
+		color: $color-green;
+		line-height: 0.75;
+		padding-bottom: 0.2em;
+
+		&::after { background-color: $color-green; }
+	}
+
+	p {
+		max-width: 12rem;
+		line-height: 1.2;
+		color: #666;
+		margin: 10px auto 0;
+	}
+
+	@include mq("tablet-wide", max) {
+		strong { font-size: 5rem; }
+	}
+
+	@include mq("phone-wide", max) {
+		display: flex;
+		align-items: flex-end;
+
+		strong {
+			padding-bottom: 0;
+			font-size: 4rem;
+			margin-right: 1rem;
+
+			&::after { content: none; }
+		}
+	}
+}

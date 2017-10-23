@@ -1,0 +1,34 @@
+@import "expertise/expertise-text";
+
+.expertise {
+	background-color: #fafafa;
+
+	h2 {
+		@extend %underlined;
+		text-align: left;
+		&:after { left: 0; transform: none;}
+	}
+
+	p {
+		margin-top: 30px;
+		color: #444;
+	}
+
+	.expertise-content {
+		@extend %section-content;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.text {
+		@extend %expertise-text;
+	}
+
+	@include mq("phone-wide", max) {
+		.expertise-content {
+			width: auto;
+			padding-left: $padding-mobile;
+			padding-right: $padding-mobile;
+		}
+	}
+}

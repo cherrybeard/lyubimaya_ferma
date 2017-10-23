@@ -1,0 +1,29 @@
+.product-item {
+	position: relative;
+	width: 33%;
+	padding-top: 5.5rem;
+	font-size: 0.9rem;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 6.4rem;
+		height: 5rem;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	@include mq("phone-wide", max) {
+		font-size: 0.75rem;
+		padding-top: 3.4rem;
+
+		&::before {
+			width: 3.75rem;
+			height: 2.9rem;
+		}
+	}
+}

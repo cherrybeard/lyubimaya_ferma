@@ -1,0 +1,14 @@
+%intro {
+	font-family: $font-secondary;
+	font-size: 1.4rem;
+	line-height: 1.3;
+	color: #222;
+
+	strong {
+		color: $color-green;
+	}
+
+	@include mq("phone-wide", max) {
+		font-size: 1.2rem;
+	}
+}

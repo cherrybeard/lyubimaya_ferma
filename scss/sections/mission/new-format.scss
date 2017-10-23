@@ -1,0 +1,24 @@
+.new-format {
+	@extend %intro;
+	width: 640px;
+	border: solid 3px $color-green;
+	box-sizing: border-box;
+	padding: 50px 80px 60px;
+	margin-left: auto;
+	margin-right: auto;
+
+	@include mq("phone-wide", max) {
+		border: none;
+		padding-top: 1.5rem;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 2.5rem;
+			height: 2px;
+			top: 0;
+			left: $padding-mobile;
+			background-color: $color-green;
+		}
+	}
+}

@@ -1,0 +1,51 @@
+@import "mission/intro";
+@import "mission/bigger-than-market";
+@import "mission/new-format";
+@import "mission/love-our-work";
+
+.mission {
+	padding-top: 3.5rem;
+	padding-bottom: 6.5rem;
+	overflow: hidden;
+
+	h3 {
+		font-size: 0.85rem;
+		letter-spacing: 0.2em;
+		color: #aaa;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+	}
+
+	.intro {
+		margin-bottom: 80px;
+	}
+
+	.new-format {
+		margin-top: 55px;
+		margin-bottom: -35px;
+		z-index: 1;
+		position: relative;
+	}
+
+	@include mq("tablet-wide", max) {
+		padding-bottom: 3.5rem;
+	}
+
+	@include mq("phone-wide", max) {
+		padding-top: 2rem;
+		padding-bottom: 4rem;
+
+		.new-format {
+			margin-bottom: 0;
+		}
+
+		.intro,
+		.bigger-than-market,
+		.new-format,
+		.love-our-work {
+			width: auto;
+			padding-left: $padding-mobile;
+			padding-right: $padding-mobile;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+@import "features/item";
+
+.features {
+	display: flex;
+	justify-content: space-around;
+	font-size: 0.9rem;
+
+	.free {
+		color: $color-green;
+	}
+
+	$items: 'free', 'place', 'seo';
+
+	@each $item in $items {
+		.#{$item}::before {
+			background-image: url('../img/tenants/#{$item}.svg');
+		}
+	}
+
+	@include mq("tablet-wide", max) {
+		justify-content: center;
+	}
+
+	@include mq("phone-wide", max) {
+		flex-direction: column;
+	}
+}

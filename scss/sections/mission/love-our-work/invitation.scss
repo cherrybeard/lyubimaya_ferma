@@ -1,0 +1,16 @@
+.invitation {
+	font-size: 1.4rem;
+	color: $color-green;
+	padding-top: 1.5rem;
+	position: relative;
+	font-family: $font-secondary;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		width: 60px;
+		height: 3px;
+		background-color: $color-green;
+	}
+}

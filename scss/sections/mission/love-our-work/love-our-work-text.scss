@@ -1,0 +1,41 @@
+%love-our-work-text {
+	$width: 350px;
+	width: $width;
+	position: relative;
+	padding-top: 120px;
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 745px;
+		height: 100%;
+		top: 0;
+		left: $width + 60px;
+		background: url('../img/mission/love.jpg') center/cover no-repeat;
+	}
+
+	p + p {
+		margin-top: 1em;
+	}
+
+	@include mq("tablet") {
+		&::before {
+			width: 500px;
+			left: $width + 20px;
+		}
+	}
+
+	@include mq("phone-wide") {
+		width: auto;
+		padding-top: 0;
+
+		&::before {
+			position: static;
+			display: block;
+			width: auto;
+			height: 0;
+			padding-top: 80%;
+			margin: 0 (-$padding-mobile) 2rem;
+		}
+	}
+}

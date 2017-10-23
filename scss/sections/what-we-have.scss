@@ -1,0 +1,38 @@
+@import "what-we-have/product-item";
+@import "what-we-have/product";
+
+.what-we-have {
+	height: 100vh;
+	height: 100%;
+	max-height: 800px;
+	background: url('../img/what-we-have/bg.jpg') center/cover no-repeat;
+	text-align: center;
+	padding: 90px;
+	box-sizing: border-box;
+	color: white;
+
+	.product { margin: auto; }
+
+	h2 {
+		@extend %underlined;
+		margin-bottom: 20px;
+		&::after { background-color: white;}
+	}
+
+	$list: (veg, meat, candy, tea, milk, soap);
+	@each $item in $list {
+		.#{$item}::before {
+			background-image: url('../img/what-we-have/product/#{$item}.png');
+		}
+	}
+
+	@include mq("phone-wide", max) {
+		height: auto;
+		padding: 3rem $padding-mobile;
+
+		h2::after {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}

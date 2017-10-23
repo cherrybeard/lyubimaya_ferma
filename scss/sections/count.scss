@@ -1,0 +1,23 @@
+@import "count/count-item";
+
+.count {
+	@extend %section-content;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	text-align: center;
+	padding: 4.5rem 0;
+
+	@include mq("tablet-wide", max) {
+		padding: 3rem 0;
+		width: auto;
+	}
+
+	@include mq("phone-wide", max) {
+		padding: 3rem $padding-mobile;
+		flex-direction: column;
+		text-align: left;
+
+		.count-item:not(:first-child) { margin-top: 2rem; }
+	}
+}

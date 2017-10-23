@@ -1,0 +1,33 @@
+@import "footer/contacts";
+
+.footer {
+	height: 35rem;
+	background: #F3F9E9 url(../img/footer.jpg) center/cover no-repeat;
+
+	.contacts-block {
+		@extend %section-content;
+		padding-top: 4%;
+	}
+
+	@include mq("tablet-wide", max) {
+		height: 25rem;
+
+		.contacts-block {
+			width: auto;
+			padding: 1rem;
+		}
+	}
+
+	@include mq("phone-wide", max) {
+		margin-top: 12rem;
+		position: relative;
+		height: 14rem;
+		//background-position: 80% center; --focus on the text
+
+		.contacts-block {
+			position: absolute;
+			padding: 0;
+			top: -12rem;
+		}
+	}
+}

@@ -1,0 +1,35 @@
+.bigger-than-market {
+	@extend %section-content;
+	display: flex;
+	align-items: center;
+
+	&::before {
+		content: '';
+		display: block;
+		width: 22.5rem;
+		height: 18rem;
+		background: url('../img/mission/more.jpg') center/contain no-repeat;
+	}
+
+	.text {
+		width: 520px;
+		margin-left: 60px;
+	}
+
+	@include mq("tablet", max) {
+		&::before {
+			width: 16rem;
+			height: 12.8rem;
+		}
+	}
+
+	@include mq("phone-wide", max) {
+		flex-direction: column;
+		box-sizing: border-box;
+
+		.text {
+			width: auto;
+			margin: 40px 0 0;
+		}
+	}
+}

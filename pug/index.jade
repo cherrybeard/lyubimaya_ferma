@@ -13,15 +13,14 @@ html(lang='en')
 		meta(name='viewport', content='width=device-width')
 		title Любимая ферма
 	body
-		include header
-		include mission
-		include production
-		//- include our-live
-		include expertise
-		include count
-		include tenants
-		include footer
+		include sections/header
+		include sections/mission
+		include sections/what-we-have
+		//- include sections/our-live
+		include sections/expertise
+		include sections/count
+		include sections/tenants
+		include sections/footer
 		
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
-		script(src="script/main.js")
-
+		script(src="js/main.js")

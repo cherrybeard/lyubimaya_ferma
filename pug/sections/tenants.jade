@@ -1,0 +1,19 @@
+.tenants
+	h2 Арендаторам
+	p
+		span «Любимая ферма»
+		= " "
+		| совмещает ряд ключевых преимуществ, и&nbsp;подойдёт и&nbsp;для&nbsp;опытных дилеров, и&nbsp;для&nbsp;начинающих.
+		
+	.features
+		.features-item.free Пробные пять рабочих дней бесплатно
+		.features-item.place Готовое торговое место под ключ
+		.features-item.seo Маркетинг продвижение включено
+		
+	.callback(data-callback-state="button")
+		button(data-callback-show) Обратный звонок
+		
+		form(action="" method="post" data-callback-form)
+			.text-input
+				input(type="tel" placeholder="Телефон" name="phone")
+			button(type="submit") Перезвоните мне

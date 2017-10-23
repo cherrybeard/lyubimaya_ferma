@@ -1,0 +1,23 @@
+.callback {
+	&:not([data-callback-state=button]) [data-callback-show] { display: none; }
+	&:not([data-callback-state=form]) [data-callback-form] { display: none; }
+
+	button,
+	.text-input {
+		vertical-align: bottom;
+	}
+	
+	button { @extend %green-button;}
+	.text-input { width: 13.5rem; }
+
+	@include mq("phone-wide", max) {
+		width: 100%;
+
+		.text-input,
+		button {
+			width: 100%;
+		}
+
+		.text-input { margin-bottom: 1rem; }
+	}
+}

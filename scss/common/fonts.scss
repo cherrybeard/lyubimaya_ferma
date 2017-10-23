@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Lora&subset=cyrillic');
+
+// $url-lora: '../fonts/lora';
+
+// @font-face {
+// 	$weight: 'regular';
+// 	font-family: 'Lora';
+// 	src: url('#{$url-lora}/#{$weight}.eot');
+// 	src: url('#{$url-lora}/#{$weight}.eot?#iefix') format('embedded-opentype'), url('#{$url-lora}/#{$weight}.woff2') format('woff2'), url('#{$url-lora}/#{$weight}.woff') format('woff'), url('#{$url-lora}/#{$weight}.ttf') format('truetype');
+// 	font-weight: 400;
+// 	font-style: normal;
+// }
+
+$font-primary: 'Tahoma', sans-serif;
+$font-secondary: 'Lora', serif;
+
+h2 {
+	font-family: $font-secondary;
+	font-size: 3.5rem;
+	line-height: 1.15;
+
+	@include mq("phone-wide", max) {
+		font-size: 2rem;
+	}
+}
+
+a {
+	color: $color-green;
+	text-decoration: none;
+}

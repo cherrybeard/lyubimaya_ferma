@@ -1,0 +1,36 @@
+@import "tenants/features";
+@import "tenants/callback";
+
+.tenants {
+	background-color: #fafafa;
+	padding: 3rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+	h2 { @extend %underlined;}
+
+	p {
+		@extend %intro;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		max-width: 39rem;
+
+		span { color: $color-green;}
+	}
+
+	.features { margin-bottom: 2.5rem; }
+
+	@include mq("phone-wide", max) {
+		padding-left: $padding-mobile;
+		padding-right: $padding-mobile;
+		text-align: left;
+		align-items: flex-start;
+
+		p { width: auto; }
+		.features { margin-bottom: 1.5rem; }
+	}
+
+}

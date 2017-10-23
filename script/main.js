@@ -1,12 +1,20 @@
 $(function(){
-	var callback = $(".callback");
-	var callbackForm = $(".callback-form");
-	callback.click(function(){
-		callbackForm.toggleClass("hide");
-		callback.toggleClass("hide");
+	var $callback = $("[data-callback-show]");
+	var $callbackForm = $("[data-callback-form]");
+
+	function checkInputs($inputs){
+		$inputs.each(function(){
+			var $input = $(this).closest('.text-input');
+			if (!$(this).val()) {$input.addClass('error'); }
+		});
+	}
+
+	$callback.click(function(){
+		$(this).closest('[data-callback-state]').attr('data-callback-state', 'form');
 	});
-	$('[data-form]').on('submit', function(e){
-		$this = $(this);
+
+	$callbackForm.on('submit', function(e){
+		var $this = $(this);
 		e.preventDefault();
 
 		checkInputs($this.find('input[type=tel]'));
@@ -19,7 +27,7 @@ $(function(){
 			};
 			$this.find('button[type=submit]').prop('disabled', true);
 			$this.find('.text-input').addClass('disabled');
-			$.ajax(ajaxData).done(function(req) {
+			$.ajax(ajaxData).done(function() {
 				$this.find('button[type=submit]').prop('disabled', false).addClass('success').text('Отправлено!');
 			});
 		}

@@ -1,0 +1,20 @@
+@import "love-our-work/invitation";
+@import "love-our-work/love-our-work-text";
+
+.love-our-work {
+	@extend %section-content;
+	box-sizing: border-box;
+	height: 655px;
+
+	.text {
+		@extend %love-our-work-text;
+	}
+
+	.invitation {
+		margin-top: 2rem;
+	}
+
+	@include mq("phone-wide") {
+		height: auto;
+	}
+}

@@ -1,26 +1,19 @@
-div, p, body, button, h1, h2, h3, h4, img, hr, li, ul, span, section, a, nav, form, option, select, label, input, button, header, footer{
-	margin: 0;
-	padding: 0;
-}
-p, h1, h2, h3, span {
-	cursor: default;
-}
+@import "common/reset";
+@import "common/mixins";
+@import "common/fonts";
+@import "common/main";
 
-input {
-	font-family: inherit;
-}
+@import "ui/underlined.scss";
+@import "ui/intro.scss";
+@import "ui/section-content.scss";
+@import "ui/green-button.scss";
+@import "ui/text-input.scss";
 
-@import "UI/fonts";
-@import "UI/color";
-@import "mixins";
-@import "basic-style", "_media-basic-style";
-@import "UI/text-input.scss";
-
-@import "header/header", "header/_media-header";
-@import "mission/mission", "mission/_media-mission";
-@import "production/production","production/_media-production";
-@import "our-live/our-live", "our-live/_media-our-live";
-@import "expertise/expertise", "expertise/_media-expertise";
-@import "count/count", "count/_media-count";
-@import "tenants/tenants", "tenants/_media-tenants";
-@import "footer/footer", "footer/_media-footer";
+@import "sections/header";
+@import "sections/mission";
+@import "sections/what-we-have";
+//@import "sections/our-life";
+@import "sections/expertise";
+@import "sections/count";
+@import "sections/tenants";
+@import "sections/footer";

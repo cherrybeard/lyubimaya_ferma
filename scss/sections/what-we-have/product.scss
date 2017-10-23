@@ -1,0 +1,16 @@
+.product {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	height: 22rem;
+	max-width: 700px;
+	width: 80%;
+	width: 80vw;
+
+	@include mq("phone-wide", max) {
+		height: 14rem;
+		width: 100%;
+	}
+}

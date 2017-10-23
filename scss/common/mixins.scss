@@ -1,0 +1,26 @@
+$min-height: 600px;
+$color-green: #79b50b;
+$width: 850px;
+$padding-mobile: 20px;
+
+$breakpoints: (
+    "phone":        400px,
+    "phone-wide":   480px,
+    "phablet":      560px,
+    "tablet-small": 640px,
+    "tablet":       768px,
+    "850":          850px,
+    "tablet-wide":  1024px,
+    "desktop":      1248px,
+    "1281":         1281px,
+    "desktop-wide": 1440px
+);
+
+@mixin mq($width, $type: max) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @media screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}

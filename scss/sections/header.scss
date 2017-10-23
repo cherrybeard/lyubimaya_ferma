@@ -1,0 +1,27 @@
+@import "header/logo";
+@import "header/cutoff";
+@import "header/header-texts";
+
+.header {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	height: 85%;
+	height: 85vh;
+	min-height: $min-height;
+	padding: 0 40px 5%;
+	background: black url('../img/header/bg.jpg') center/cover no-repeat;
+	color: white;
+	text-align: center;
+	@extend %cutoff;
+	@extend %header-texts;
+
+	@include mq("phone-wide", max) {
+		min-height: 400px;
+		height: 85%;
+		height: 85vh;
+	}
+}

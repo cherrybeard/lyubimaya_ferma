@@ -1,0 +1,20 @@
+%header-texts {
+	h2 {
+		margin-top: 50px;
+
+		span {
+			display: block;
+		}
+	}
+
+	p {
+		margin-top: 30px;
+		color: #ddd;
+	}
+
+	@include mq("phone-wide", max) {
+		h2 {
+			margin-top: 20px;
+		}
+	}
+}
