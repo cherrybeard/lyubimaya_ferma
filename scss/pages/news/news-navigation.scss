@@ -1,0 +1,63 @@
+.news-navigation {
+	$arrow-size: 20px;
+	$arrow-padding: 40px;
+
+	@extend %section-content;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+
+	a {
+		cursor: pointer;
+		padding: 5px 0;
+		position: relative;
+		font-family: $font-secondary;
+		color: $color-green;
+
+		&:before {
+			position: absolute;
+			top: 9px;
+			content: "";
+			width: $arrow-size;
+			height: $arrow-size;
+			transform: rotate(-45deg);
+			border: solid 1px $color-green;
+			border-bottom: transparent;
+			border-right: transparent;
+		}
+
+		&.navigation-prev {
+			padding-left: $arrow-padding;
+			&:before { left: 5px;}
+		}
+
+		&.navigation-next {
+			padding-right: $arrow-padding;
+			&:before {
+				right: 5px;
+				transform: rotate(135deg);}
+		}
+	}
+
+	@include mq("tablet-wide") {
+		.navigation {
+			width: 100%;
+			padding-left: $padding-mobile;
+			padding-right: $padding-mobile;
+
+			a {
+				font-size: 0.7rem;
+				width: 80px;
+				&:before {width: $arrow-size + 10px; height: $arrow-size - 10px; top: 15px;}
+				&[data-direction="left"] { padding-left: $arrow-padding - 20px; }
+				&[data-direction="right"] { padding-right: $arrow-padding - 20px; text-align: right;}
+			}
+		}
+	}
+
+	@include mq("phablet") {
+		.navigation a:before {width: $arrow-size - 15px; height: $arrow-size - 15px;}
+	}
+
+}
