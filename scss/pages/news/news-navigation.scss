@@ -41,23 +41,36 @@
 	}
 
 	@include mq("tablet-wide") {
-		.navigation {
-			width: 100%;
-			padding-left: $padding-mobile;
-			padding-right: $padding-mobile;
+		width: 100%;
+		padding-left: $padding-mobile;
+		padding-right: $padding-mobile;
 
-			a {
-				font-size: 0.7rem;
-				width: 80px;
-				&:before {width: $arrow-size + 10px; height: $arrow-size - 10px; top: 15px;}
-				&[data-direction="left"] { padding-left: $arrow-padding - 20px; }
-				&[data-direction="right"] { padding-right: $arrow-padding - 20px; text-align: right;}
+		a {
+			font-size: 0.7rem;
+			width: 80px;
+
+			&:before {
+				width: $arrow-size + 10px;
+				height: $arrow-size - 10px;
+				top: 15px;
+			}
+
+			&.navigation-prev {
+				padding-left: $arrow-padding - 20px;
+			}
+
+			&.navigation-next {
+				padding-right: $arrow-padding - 20px;
+				text-align: right;
 			}
 		}
 	}
 
 	@include mq("phablet") {
-		.navigation a:before {width: $arrow-size - 15px; height: $arrow-size - 15px;}
+		a:before {
+			width: $arrow-size - 15px;
+			height: $arrow-size - 15px;
+		}
 	}
 
 }

@@ -5,7 +5,7 @@
 		.news-preview
 			.image(style="background-image: url('img/news/#{img}.jpg');")
 			.text
-				a(href="/news.html")
+				a(href="news.html")
 					h3= title
 				time.date= date
 				block
@@ -20,4 +20,4 @@
 		+news-preview("cooking-shows", "Кулинарные шоу", "10 сентября")
 			p Смотреть, как умело делает свою работу профессионал, всегда завораживает.
 			
-	a.more-news(href="/news.html") Еще новости
+	a.more-news(href="news.html") Еще новости
