@@ -19,7 +19,7 @@ html { font-family: "Tahoma", sans-serif; font-size: 20px; line-height: 1.4; col
 .intro p strong, .new-format strong, .tenants p strong { color: #79b50b; }
 @media screen and (max-width: 480px) { .intro p, .new-format, .tenants p { font-size: 1.2rem; } }
 
-.bigger-than-market, .love-our-work, .expertise .expertise-content, .count, .footer .contacts-block, .news-item, .navigation { width: 80%; max-width: 1080px; margin-left: auto; margin-right: auto; }
+.bigger-than-market, .love-our-work, .our-life, .expertise .expertise-content, .count, .footer .contacts-block, .news-item, .navigation { width: 80%; max-width: 1080px; margin-left: auto; margin-right: auto; }
 
 .our-life .more-news, .callback button { font-size: 18px; line-height: 52px; text-align: center; border: none; border-radius: 8px; background-color: #79b50b; color: white; padding: 0 2.5rem; display: inline-block; }
 
@@ -101,14 +101,17 @@ html { font-family: "Tahoma", sans-serif; font-size: 20px; line-height: 1.4; col
 @media screen and (max-width: 480px) { .what-we-have { height: auto; padding: 3rem 20px; }
   .what-we-have h2::after { left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); } }
 
-.our-life { height: 100vh; max-height: 1000px; min-height: 600px; position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-.our-life .news { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100%; }
-.our-life .news .news-item { box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.04); border: solid 1px #eeeeee; width: 317px; min-width: 300px; height: 400px; }
-.our-life .news .news-item h3, .our-life .news .news-item .date, .our-life .news .news-item p { padding-left: 20px; }
-.our-life .news .news-item h3 { font-weight: normal; font-size: 1.56em; line-height: 1.44; text-align: left; color: #222222; }
-.our-life .news .news-item img { width: 100%; height: 233px; }
-.our-life .news .news-item .date { display: inline-block; font-family: Tahoma; text-align: left; color: #888888; padding-bottom: 15px; }
-.our-life .news .news-item p { font-family: Tahoma; font-size: 1.125em; line-height: 1.33; text-align: left; color: #444444; }
+.news-preview { box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.04); border: solid 1px #eeeeee; width: 320px; height: 400px; text-align: left; position: relative; }
+.news-preview a { color: inherit; }
+.news-preview a::before { content: ''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; }
+.news-preview h3 { font-size: 1.25rem; font-family: "Lora", serif; }
+.news-preview time { display: block; color: #888; font-size: 0.8rem; margin-bottom: 1em; }
+.news-preview p { font-size: 0.9rem; }
+.news-preview .text { padding: 0 20px 20px; }
+.news-preview .image { width: 100%; padding-top: 65%; margin-bottom: 20px; background-position: center; background-size: cover; background-repeat: no-repeat; }
+
+.our-life { padding-top: 3rem; padding-bottom: 3rem; text-align: center; }
+.our-life .news-previews { margin-top: 50px; margin-bottom: 2rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
 .expertise .text { padding: 80px 0; box-sizing: border-box; position: relative; width: 480px; }
 .expertise .text::after { content: ''; position: absolute; width: 720px; height: 440px; background: url("../img/expertise.jpg") center/contain no-repeat; right: 500px; bottom: 0; }

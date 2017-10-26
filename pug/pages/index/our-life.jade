@@ -1,21 +1,23 @@
 .our-life
 	h2 Наша жизнь
 	
-	mixin news-item(img, title, date)
-		figure.news-item
-			img(src="../img/news/#{img}.jpg", alt="#{title}")
-			h3= title
-			time.date= date
-			block
+	mixin news-preview(img, title, date)
+		.news-preview
+			.image(style="background-image: url('img/news/#{img}.jpg');")
+			.text
+				a(href="/news.html")
+					h3= title
+				time.date= date
+				block
 	
-	.news
-		+news-item("birthday", "День рождения рынка", "23 сентября")
+	.news-previews
+		+news-preview("birthday", "День рождения рынка", "23 сентября")
 			p 15 сентября исполнилось 2 года «Любимой ферме». В этот день у нас была особая программа.
 		
-		+news-item("master-classes", "Мастер-классы", "19 сентября")
+		+news-preview("master-classes", "Мастер-классы", "19 сентября")
 			p Список предстоящих мастер-классов, запланированых на октябрь.
 			
-		+news-item("cooking-shows", "Кулинарные шоу", "10 сентября")
+		+news-preview("cooking-shows", "Кулинарные шоу", "10 сентября")
 			p Смотреть, как умело делает свою работу профессионал, всегда завораживает.
 			
-	button.more-news Еще новости
+	a.more-news(href="/news.html") Еще новости
