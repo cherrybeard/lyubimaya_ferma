@@ -1,39 +1,48 @@
 $arrow-size: 20px;
 $arrow-padding: 40px;
-.news {
 
+.news {
 	padding-top: 60px;
 	padding-bottom: 40px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
 	h2 { @extend %underlined;}
 }
+
 .news-item {
 	@extend %section-content;
 	padding-bottom: 50px;
+
 	h3 {
 		font-family: $font-secondary;
 		padding-bottom: 10px;
-		font-size: 40px;}
-	time { 
-		display: block;	
+		font-size: 40px;
+	}
+
+	time {
+		display: block;
 		font-size: 18px;
- 		color: #888;}
-	img { 
-		margin-bottom: 30px; 
-		margin-top: 30px;}
-	
-	p { padding-bottom: 20px;}
+ 		color: #888;
+	}
+
+	img {
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
+
+	p { padding-bottom: 20px; }
 
 }
+
 .navigation {
 	margin-bottom: 50px;
 	@extend %section-content;
 	display: flex;
 	justify-content: space-between;
 	box-sizing: border-box;
-	
+
 	a {
 		cursor: pointer;
 		padding: 5px 0;
@@ -56,7 +65,7 @@ $arrow-padding: 40px;
 			&:before { left: 5px;}
 		}
 		&[data-direction="right"] {
-			padding-right: $arrow-padding; 
+			padding-right: $arrow-padding;
 			&:before {
 				right: 5px;
 				transform: rotate(135deg);}
@@ -64,7 +73,7 @@ $arrow-padding: 40px;
 	}
 }
 @include mq("tablet-wide") {
-	.news-item { 
+	.news-item {
 		overflow: hidden;
 		width: 100%;
 		box-sizing: border-box;
