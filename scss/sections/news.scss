@@ -1,6 +1,9 @@
+$arrow-size: 20px;
+$arrow-padding: 40px;
 .news {
+
 	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-bottom: 40px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -13,11 +16,14 @@
 		padding-bottom: 10px;
 		font-size: 40px;}
 	time { 
-		display: block;
-		padding-bottom: 30px;	
+		display: block;	
 		font-size: 18px;
  		color: #888;}
-	img { width: 100%; height: 700px;}
+	img { 
+		// $img-width: 634px;
+		// width: $img-width; 
+		margin-bottom: 30px; 
+		margin-top: 30px;}
 	
 	p { padding-bottom: 20px;}
 
@@ -28,6 +34,7 @@
 	display: flex;
 	justify-content: space-between;
 	box-sizing: border-box;
+	
 	a {
 		cursor: pointer;
 		padding: 5px 0;
@@ -38,54 +45,52 @@
 			position: absolute;
 			top: 9px;
 			content: "";
-			width: 20px;
-			height: 20px;
+			width: $arrow-size;
+			height: $arrow-size;
 			transform: rotate(-45deg);
-			border: solid 1px #79b50c;
+			border: solid 1px $color-green;
 			border-bottom: transparent;
 			border-right: transparent;
 		}
 		&[data-direction="left"] {
-			padding-left: 40px;
-			&:before {
-				left: 5px;
-			}
+			padding-left: $arrow-padding;
+			&:before { left: 5px;}
 		}
 		&[data-direction="right"] {
-			padding-right: 40px; 
+			padding-right: $arrow-padding; 
 			&:before {
 				right: 5px;
 				transform: rotate(135deg);}
 		}
 	}
 }
-@include mq("tablet-wide", max) {
-	.news {
-		align-items: flex-start;
-		padding-left: $padding-mobile;
-		padding-right: $padding-mobile;
-	}
+@include mq("tablet-wide") {
 	.news-item { 
+		overflow: hidden;
 		width: 100%;
 		box-sizing: border-box;
 		padding-left: $padding-mobile;
 		padding-right: $padding-mobile;
-		img { width: 80%; height: 500px; margin: 0 auto;}
 		h3 { font-size: 2rem; }
+		img { margin-left: -20px;}
 
 	}
-	.navigation 
-		a { font-size: 0.8rem; 
-			&:before {width: 10px; height: 10px; top: 10px;}
-			&[data-direction="left"] {padding-left: 20px; }
-			&[data-direction="right"] {padding-right: 20px; }
+	.navigation {
+		width: 100%;
+		padding-left: $padding-mobile;
+		padding-right: $padding-mobile;
+			a { font-size: 0.7rem;
+				width: 80px;
+				&:before {width: $arrow-size + 10px; height: $arrow-size - 10px; top: 15px;}
+				&[data-direction="left"] { padding-left: $arrow-padding - 20px; }
+				&[data-direction="right"] { padding-right: $arrow-padding - 20px; text-align: right;}
+			}
 		}
 	}
-@include mq("phablet", max) {
-	.news-item img {
-		width: 100%;
-		height: 300px;
-	}
-	.navigation a { font-size: 0.6rem; }
-	.navigation a:before {width: 5px; height: 5px; top: 7px;}
+@include mq("phablet") {
+	.navigation a:before {width: $arrow-size - 15px; height: $arrow-size - 15px;}
+}
+@include mq("phone-wide") {
+	.news h2 { font-size: 3rem;}
+	.news h2:after { left: 50%; transform: translateX(-50%);}
 }
