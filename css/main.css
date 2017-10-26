@@ -766,6 +766,7 @@ html {
 .news-item {
   padding-bottom: 50px; }
   .news-item h3 {
+    font-family: "Lora", serif;
     padding-bottom: 10px;
     font-size: 40px; }
   .news-item time {

@@ -7,12 +7,13 @@ $arrow-padding: 40px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	h2 { @extend %underlined; }
+	h2 { @extend %underlined;}
 }
 .news-item {
 	@extend %section-content;
 	padding-bottom: 50px;
 	h3 {
+		font-family: $font-secondary;
 		padding-bottom: 10px;
 		font-size: 40px;}
 	time { 
@@ -20,8 +21,6 @@ $arrow-padding: 40px;
 		font-size: 18px;
  		color: #888;}
 	img { 
-		// $img-width: 634px;
-		// width: $img-width; 
 		margin-bottom: 30px; 
 		margin-top: 30px;}
 	
