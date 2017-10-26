@@ -1,4 +1,4 @@
-.our-live {
+.our-life {
 	height: 100vh;
 	max-height: 1000px;
 	min-height: 600px;
@@ -7,7 +7,9 @@
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
+
 	h2 { @extend %underlined; }
+	
 	.news {
 		display: flex;
 		justify-content: center;
@@ -43,7 +45,7 @@
 				text-align: left;
 				color: #444444;}
 		}
-	
+
 	}
 	.more-news { @extend %green-button; }
 }

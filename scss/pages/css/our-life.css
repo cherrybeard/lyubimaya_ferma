@@ -1,0 +1,27 @@
+/*
+Sass::SyntaxError: ".our-live h2" failed to @extend "%underlined".
+The selector "%underlined" was not found.
+Use "@extend %underlined !optional" if the extend should be able to fail.
+
+
+Backtrace:
+/Users/cherry/Dropbox (Personal)/Misc/Любимая ферма/Web/azbukafermy/scss/pages/index/our-life.scss:10
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/extend.rb:62:in `block in check_extends_fired!'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/util/subset_map.rb:105:in `block in each_value'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/util/subset_map.rb:105:in `each'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/util/subset_map.rb:105:in `each_value'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/extend.rb:51:in `check_extends_fired!'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/extend.rb:16:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:39:in `css_tree'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:20:in `render'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:278:in `render'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:423:in `run'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:52:in `parse'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/scss:13:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Sass::SyntaxError: \".our-live h2\" failed to @extend \"%underlined\".\A The selector \"%underlined\" was not found.\A Use \"@extend %underlined !optional\" if the extend should be able to fail.\A "; }
