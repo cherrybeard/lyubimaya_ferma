@@ -6,12 +6,7 @@
 	padding-bottom: 3rem;
 	text-align: center;
 
-	h2 {
-		@extend %underlined; 
-		@include mq("phone-wide") {
-			text-align: left;
-		}
-	}
+	h2 { @extend %underlined;  }
 	.more-news { @extend %green-button; }
 
 	.news-previews {
@@ -27,6 +22,7 @@
 			padding-left: $padding-mobile;
 			padding-right: $padding-mobile;
 			box-sizing: border-box;
+			h2 { text-align: left; }
 			.news-previews {
 				flex-direction: column;
 				&:first-of-type {margin-top: 1.5rem;}

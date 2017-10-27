@@ -467,9 +467,6 @@ html {
   padding-top: 3rem;
   padding-bottom: 3rem;
   text-align: center; }
-  @media screen and (max-width: 480px) {
-    .our-life h2 {
-      text-align: left; } }
   .our-life .news-previews {
     margin-top: 50px;
     margin-bottom: 2rem;
@@ -489,6 +486,8 @@ html {
       padding-right: 20px;
       -webkit-box-sizing: border-box;
       box-sizing: border-box; }
+      .our-life h2 {
+        text-align: left; }
       .our-life .news-previews {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
