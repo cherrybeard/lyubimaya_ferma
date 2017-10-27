@@ -1,5 +1,7 @@
+block variables
+
 doctype html
-html(lang='en')
+html(lang='ru')
 	head
 		meta(charset='UTF-8')
 		meta(name="description" content="Любимая ферма, рынок")
@@ -11,16 +13,10 @@ html(lang='en')
 		link(rel='stylesheet', href='css/main.css')
 		//- link(rel="icon" href="img/favicon.ico"  type="image/ico" sizes="16x16")
 		meta(name='viewport', content='width=device-width')
-		title Любимая ферма
+		title= title
+		
 	body
-		include sections/header
-		include sections/mission
-		include sections/what-we-have
-		//- include sections/our-live
-		include sections/expertise
-		include sections/count
-		include sections/tenants
-		include sections/footer
+		block content
 		
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
 		script(src="js/main.js")

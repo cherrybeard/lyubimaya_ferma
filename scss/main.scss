@@ -3,17 +3,12 @@
 @import "common/fonts";
 @import "common/main";
 
-@import "ui/underlined.scss";
-@import "ui/intro.scss";
-@import "ui/section-content.scss";
-@import "ui/green-button.scss";
-@import "ui/text-input.scss";
+@import "ui/underlined";
+@import "ui/intro";
+@import "ui/section-content";
+@import "ui/green-button";
+@import "ui/text-input";
+@import "ui/logo";
 
-@import "sections/header";
-@import "sections/mission";
-@import "sections/what-we-have";
-//@import "sections/our-life";
-@import "sections/expertise";
-@import "sections/count";
-@import "sections/tenants";
-@import "sections/footer";
+@import "pages/index";
+@import "pages/news";

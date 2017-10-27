@@ -1,0 +1,33 @@
+@import "our-life/news-preview";
+
+.our-life {
+	@extend %section-content;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	text-align: center;
+
+	h2 { @extend %underlined;  }
+	.more-news { @extend %green-button; }
+
+	.news-previews {
+		margin-top: 50px;
+		margin-bottom: 2rem;
+		display: flex;
+		justify-content: space-between;
+		
+	}
+	@include mq("tablet-wide") {
+			padding-top: 5rem;
+			width: 100%;
+			padding-left: $padding-mobile;
+			padding-right: $padding-mobile;
+			box-sizing: border-box;
+			h2 { text-align: left; }
+			.news-previews {
+				flex-direction: column;
+				&:first-of-type {margin-top: 1.5rem;}
+			}
+			.more-news { width: 100%; padding: 0; }
+			
+		}
+}
