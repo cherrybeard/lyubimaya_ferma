@@ -5,6 +5,12 @@
 	height: 400px;
 	text-align: left;
 	position: relative;
+	@include mq("tablet-wide") {
+		width: 100%;
+		border: none;
+		height: auto;
+		margin-bottom: 3rem;
+		}
 
 	a {
 		color: inherit;
