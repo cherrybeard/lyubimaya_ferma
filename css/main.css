@@ -497,7 +497,8 @@ html {
         .our-life .news-previews:first-of-type {
           margin-top: 1.5rem; }
       .our-life .more-news {
-        width: 250px; } }
+        width: 100%;
+        padding: 0; } }
 
 .expertise .text {
   padding: 80px 0;
