@@ -5,12 +5,7 @@
 	height: 400px;
 	text-align: left;
 	position: relative;
-	@include mq("tablet-wide") {
-		width: 100%;
-		border: none;
-		height: auto;
-		margin-bottom: 3rem;
-		}
+	
 
 	a {
 		color: inherit;
@@ -50,4 +45,12 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
+	@include mq("tablet-wide") {
+		width: 100%;
+		border: none;
+		height: auto;
+		margin-bottom: 3rem;
+		&:last-of-type { margin-bottom: 0;}
+		.text { padding: 0;}
+		}
 }

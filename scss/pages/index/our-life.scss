@@ -5,16 +5,11 @@
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 	text-align: center;
-	@include mq("phone-wide") {
-		width: 100%;
-	}
 
 	h2 {
 		@extend %underlined; 
 		@include mq("phone-wide") {
 			text-align: left;
-			padding-left: $padding-mobile;
-			&:after { left: $padding-mobile;}
 		}
 	}
 	.more-news { @extend %green-button; }
@@ -24,8 +19,18 @@
 		margin-bottom: 2rem;
 		display: flex;
 		justify-content: space-between;
-		@include mq("tablet-wide") {
-			flex-direction: column;
-		}
+		
 	}
+	@include mq("tablet-wide") {
+			padding-top: 5rem;
+			width: 100%;
+			padding-left: $padding-mobile;
+			padding-right: $padding-mobile;
+			box-sizing: border-box;
+			.news-previews {
+				flex-direction: column;
+				&:first-of-type {margin-top: 1.5rem;}
+			}
+			
+		}
 }
