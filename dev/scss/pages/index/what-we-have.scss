@@ -5,7 +5,7 @@
 	height: 100vh;
 	height: 100%;
 	max-height: 800px;
-	background: url('../img/what-we-have/bg.jpg') center/cover no-repeat;
+	background: url('img/what-we-have/bg.jpg') center/cover no-repeat;
 	text-align: center;
 	padding: 90px;
 	box-sizing: border-box;
@@ -22,7 +22,7 @@
 	$list: (veg, meat, candy, tea, milk, soap);
 	@each $item in $list {
 		.#{$item}::before {
-			background-image: url('../img/what-we-have/product/#{$item}.png');
+			background-image: url('img/what-we-have/product/#{$item}.png');
 		}
 	}
 

@@ -13,7 +13,7 @@
 
 	@each $item in $items {
 		.#{$item}::before {
-			background-image: url('../img/tenants/#{$item}.svg');
+			background-image: url('img/tenants/#{$item}.svg');
 		}
 	}
 

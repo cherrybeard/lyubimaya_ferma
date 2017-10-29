@@ -12,7 +12,7 @@
 	height: 85vh;
 	min-height: $min-height;
 	padding: 0 40px 5%;
-	background: black url('../img/header/bg.jpg') center/cover no-repeat;
+	background: black url('img/header/bg.jpg') center/cover no-repeat;
 	color: white;
 	text-align: center;
 	@extend %cutoff;
