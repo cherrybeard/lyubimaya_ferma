@@ -1,0 +1,13 @@
+extend ../layouts/pages/news
+
+block variables
+	- var indexLink = "<?php echo home_url(); ?>"
+
+block header
+	<?php get_header(); ?>
+	
+block news-items
+	include ../layouts/pages/news/news-items.php
+	
+block footer
+	<?php get_footer(); ?>

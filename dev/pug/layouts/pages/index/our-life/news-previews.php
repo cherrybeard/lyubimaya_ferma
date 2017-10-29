@@ -1,4 +1,4 @@
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<?php $i=0; if (have_posts()) : while (have_posts() && $i<3) : the_post(); ?>
 	<div class="news-preview">
 		<div class="image"<?php
 			if ( $thumbnail_id = get_post_thumbnail_id() ) {
@@ -10,8 +10,8 @@
 			<a href="<?php the_permalink(); ?>">
 				<h3><?php the_title(); ?></h3>
 			</a>
-			<time class="date"><?php the_date() ?></time>
+			<time class="date"><?php echo get_the_date(); ?></time>
 			<p><?php the_excerpt(); ?></p>
 		</div>
 	</div>
-<?php endwhile; endif; ?>
+<?php $i++; endwhile; endif; ?>
