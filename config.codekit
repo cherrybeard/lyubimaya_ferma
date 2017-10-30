@@ -112,26 +112,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/dev\/pug\/layouts\/pages\/index\/our-life\/more-news.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dev\/pug\/layouts\/pages\/index\/our-life\/more-news.jade",
-		"outputAbbreviatedPath": "\/dev\/pug\/layouts\/pages\/index\/our-life\/more-news.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
-		},
-	"\/dev\/pug\/layouts\/pages\/index\/our-life\/more-news.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dev\/pug\/layouts\/pages\/index\/our-life\/more-news.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/dev\/pug\/layouts\/pages\/index\/our-life\/news-previews.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -239,7 +219,7 @@
 		"outputStyle": 0
 		},
 	"\/dev\/pug\/theme\/front-page.php.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
@@ -261,7 +241,7 @@
 		"outputStyle": 0
 		},
 	"\/dev\/pug\/theme\/home.php.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
@@ -272,7 +252,7 @@
 		"outputStyle": 0
 		},
 	"\/dev\/pug\/theme\/index.php.jade": {
-		"compileDebug": 1,
+		"compileDebug": 0,
 		"fileType": 512,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,

@@ -1,13 +1,13 @@
 extend ../layouts/pages/index
 
+block variables
+	- var newsLink = "<?php echo get_post_type_archive_link( 'post' ); ?>"
+	
 block header
 	<?php get_header(); ?>
 
 block news-previews
 	include ../layouts/pages/index/our-life/news-previews.php
-	
-block more-news
-	include ../layouts/pages/index/our-life/more-news.php
 
 block footer
 	<?php get_footer(); ?>

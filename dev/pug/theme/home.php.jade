@@ -9,5 +9,8 @@ block header
 block news-items
 	include ../layouts/pages/news/news-items.php
 	
+block news-navigation
+	<?php posts_nav_link(' ', 'Предыдущая страница', 'Следующая страница'); ?>
+	
 block footer
 	<?php get_footer(); ?>
