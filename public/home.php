@@ -14,4 +14,4 @@
 <?php endwhile; endif; ?>
 
 </section>
-<div class="news-navigation"><?php posts_nav_link(' ', 'Предыдущая страница', 'Следующая страница'); ?></div><?php get_footer(); ?>
+<div class="news-navigation"><a href="<?php if( get_previous_posts_link() ) : echo get_previous_posts_page_link(); endif; ?>" class="navigation-prev">Предыдущая страница</a><a href="<?php if( get_next_posts_link() ) : echo get_next_posts_page_link(); endif; ?>" class="navigation-next">Следующая страница</a></div><?php get_footer(); ?>

@@ -1,5 +1,7 @@
 block variables
 	- var indexLink = "index.html"
+	- var prevLink = "javascript:void(0);"
+	- var nextLink = "javascript:void(0);"
 
 block header
 		
@@ -15,7 +17,7 @@ block content
 			
 	.news-navigation
 		block news-navigation
-			a.navigation-prev(href="javascript:void(0);") Предыдущая страница
-			a.navigation-next(href="javascript:void(0);") Следующая страница
+			a.navigation-prev(href!= prevLink) Предыдущая страница
+			a.navigation-next(href!= nextLink) Следующая страница
 			
 block footer

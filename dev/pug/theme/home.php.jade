@@ -2,15 +2,14 @@ extend ../layouts/pages/news
 
 block variables
 	- var indexLink = "<?php echo home_url(); ?>"
+	- var prevLink = "<?php if( get_previous_posts_link() ) : echo get_previous_posts_page_link(); endif; ?>"
+	- var nextLink = "<?php if( get_next_posts_link() ) : echo get_next_posts_page_link(); endif; ?>"
 
 block header
 	<?php get_header(); ?>
 	
 block news-items
 	include ../layouts/pages/news/news-items.php
-	
-block news-navigation
-	<?php posts_nav_link(' ', 'Предыдущая страница', 'Следующая страница'); ?>
 	
 block footer
 	<?php get_footer(); ?>

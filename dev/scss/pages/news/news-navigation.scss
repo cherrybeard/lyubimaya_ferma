@@ -38,6 +38,12 @@
 				right: 5px;
 				transform: rotate(135deg);}
 		}
+
+		&[href=""] {
+			pointer-events: none;
+			color: #ccc;
+			&::before { border-color: #ccc; }
+		}
 	}
 
 	@include mq("tablet-wide") {
