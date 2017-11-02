@@ -68,7 +68,7 @@
 	wp_reset_query();
 ?>
 
-  </div><a href="javascript:void(0);" class="more-news">Еще новости</a>
+  </div><a href="<?php echo get_post_type_archive_link( 'post' ); ?>" class="more-news">Еще новости</a>
 </div>
 <div class="expertise">
   <div class="expertise-content">
