@@ -14,9 +14,9 @@
 			}
 		?>></div>
 		<div class="text">
-			<a href="<?php echo get_post_type_archive_link( 'post' ); ?>">
+			<!--a href="<?php echo get_post_type_archive_link( 'post' ); ?>"-->
 				<h3><?php echo $recent["post_title"]; ?></h3>
-			</a>
+			<!--/a-->
 			<time class="date"><?php echo get_the_date('', $recent['ID']); ?></time>
 			<p><?php echo get_the_excerpt($recent['ID']); ?></p>
 		</div>

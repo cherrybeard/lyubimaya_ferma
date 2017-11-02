@@ -56,9 +56,9 @@
 			}
 		?>></div>
 		<div class="text">
-			<a href="<?php echo get_post_type_archive_link( 'post' ); ?>">
+			<!--a href="<?php echo get_post_type_archive_link( 'post' ); ?>"-->
 				<h3><?php echo $recent["post_title"]; ?></h3>
-			</a>
+			<!--/a-->
 			<time class="date"><?php echo get_the_date('', $recent['ID']); ?></time>
 			<p><?php echo get_the_excerpt($recent['ID']); ?></p>
 		</div>
@@ -68,7 +68,7 @@
 	wp_reset_query();
 ?>
 
-  </div><a href="<?php echo get_post_type_archive_link( 'post' ); ?>" class="more-news">Еще новости</a>
+  </div><a href="javascript:void(0);" class="more-news">Еще новости</a>
 </div>
 <div class="expertise">
   <div class="expertise-content">
