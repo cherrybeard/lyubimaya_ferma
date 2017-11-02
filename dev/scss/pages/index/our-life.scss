@@ -6,7 +6,7 @@
 	padding-bottom: 3rem;
 	text-align: center;
 
-	h2 { @extend %underlined;  }
+	h2 { @extend %underlined; }
 	.more-news { @extend %green-button; }
 
 	.news-previews {
@@ -14,7 +14,7 @@
 		margin-bottom: 2rem;
 		display: flex;
 		justify-content: space-between;
-		
+
 	}
 	@include mq("tablet-wide") {
 			padding-top: 5rem;
@@ -28,6 +28,6 @@
 				&:first-of-type {margin-top: 1.5rem;}
 			}
 			.more-news { width: 100%; padding: 0; }
-			
+
 		}
 }

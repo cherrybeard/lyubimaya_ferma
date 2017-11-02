@@ -12,14 +12,21 @@
 		display: block;
 		font-size: 18px;
  		color: #888;
+		margin-bottm: 1rem;
 	}
 
 	img {
-		margin-bottom: 30px;
-		margin-top: 30px;
+		&.alignleft { float: left; }
+		&.alignright { float: right; }
 	}
 
-	p { padding-bottom: 20px; }
+	p, ul {
+		&:not(:first-child) {
+			margin-top: 1rem;
+		}
+	}
+
+	ul { padding-left: 2em; }
 
 	@include mq("tablet-wide") {
 		overflow: hidden;
