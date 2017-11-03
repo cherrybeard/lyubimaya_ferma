@@ -14,4 +14,13 @@
 		line-height: 28px;
 		font-size: 1rem;
 	}
+
+	&.error {
+		border-color: $color-green;
+	}
+
+	&.disabled {
+		pointer-events: none;
+		opacity: 0.2;
+	}
 }

@@ -14,6 +14,14 @@
 				$(this).closest('[data-callback-state]').attr('data-callback-state', 'form');
 			});
 
+			$callbackForm.on('focus', 'input', function(){
+				$(this).closest('.text-input').removeClass('error');
+			});
+
+			$callbackForm.on('click', '.text-input', function(){
+				$(this).find('input').focus();
+			});
+
 			$callbackForm.on('submit', function(e){
 				var $this = $(this);
 				e.preventDefault();

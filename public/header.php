@@ -12,7 +12,7 @@
 		}
 		$title = 'Заявка с лендинга Любимая Ферма #1';
 		if (!empty($_POST['msg'])) $msg .= '<br>'.$_POST['msg'];
-    $to = 'stephen.gusev@gmail.com,purecoffee@yandex.ru';
+    $to = 'pavlova@blackstonekeeping.com';
 		$header = 'MIME-Version: 1.0' . "\n" .
 			'Content-type: text/html; charset=UTF-8'. "\n" .
 			"From: Lubimaya Ferma <hi@lubimaya-ferma.ru>\n";
