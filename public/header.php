@@ -6,5 +6,5 @@
   <link rel="icon" href="img/favicon.png">
   <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/apple-icon.png">
   <meta name="viewport" content="width=device-width">
-  <title>Любимая ферма</title>
+  <title>Любимая ферма</title><?php wp_head(); ?>
 </head><body>
