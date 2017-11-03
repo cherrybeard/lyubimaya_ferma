@@ -22,7 +22,6 @@
 
 				if (!$this.find('.text-input.error').length){
 					var ajaxData = {
-						url: 'index.php',
 						type: $this.attr('method'),
 						data: $this.serialize()
 					};
