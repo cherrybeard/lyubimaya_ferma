@@ -41,5 +41,18 @@
 				}
 			});
 
+			$('[data-scroll-to]').on('click', function(e){
+				var target = $(this).attr('data-scroll-to');
+				console.log(target);
+				if (target) {
+					e.preventDefault();
+					var pos = $(target).offset().top;
+					var menuHeight = $('.menu').outerHeight();
+					$('html, body').animate({
+			        scrollTop: (pos - menuHeight + 5)
+			    }, 300);
+				}
+			});
+
 	});
 })(jQuery);

@@ -1,0 +1,27 @@
+.menu {
+	background: black;
+	color: #aaa;
+	line-height: 30px;
+	font-size: 0.6rem;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+
+	ul {
+		@extend %section-content;
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		max-width: 700px;
+	}
+
+	a {
+		color: inherit;
+		display: inline-block;
+		padding: 0 0.5em;
+	}
+}

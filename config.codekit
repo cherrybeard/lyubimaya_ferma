@@ -99,6 +99,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/dev\/pug\/layouts\/pages\/index\/menu.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dev\/pug\/layouts\/pages\/index\/menu.jade",
+		"outputAbbreviatedPath": "\/dev\/pug\/layouts\/pages\/index\/menu.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
 	"\/dev\/pug\/layouts\/pages\/index\/mission.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -280,7 +291,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
 	"\/dev\/scss\/common\/fonts.scss": {
 		"createSourceMap": 0,
@@ -515,6 +526,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dev\/scss\/pages\/index\/header\/header-texts.scss",
 		"outputAbbreviatedPath": "\/dev\/scss\/pages\/index\/css\/header-texts.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/dev\/scss\/pages\/index\/menu.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dev\/scss\/pages\/index\/menu.scss",
+		"outputAbbreviatedPath": "\/dev\/scss\/pages\/css\/menu.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -961,6 +988,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/public\/functions.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/public\/header.php": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/header.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
