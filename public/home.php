@@ -1,7 +1,7 @@
 <?php get_header(); ?>
-<header class="news-header"><a href="<?php echo home_url(); ?>">
-      <h2 class="logo">Любимая ферма</h2></a>
-    <h1><?php wp_title(''); ?></h1>
+<header class="page-header"><a href="<?php echo home_url(); ?>">
+    <h2 class="logo">Любимая ферма</h2></a>
+  <h1><?php wp_title(''); ?></h1>
 </header>
 <section class="news-items"><?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

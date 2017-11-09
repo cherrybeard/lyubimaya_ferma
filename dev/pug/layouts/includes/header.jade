@@ -17,7 +17,8 @@ head
 	link(rel="stylesheet", href!= cssLink)/
 	link(rel="icon" href="img/favicon.png")/
 	link(rel="apple-touch-icon-precomposed" sizes="152x152" href="img/apple-icon.png")/
-	- var title = isStatic ? "Любимая ферма" : "<?php is_front_page() ? bloginfo('name') : wp_title(''); ?>"
+	unless isStatic
+		- var title = "<?php is_front_page() ? bloginfo('name') : wp_title(''); ?>"
 	title!= title
 	
 	unless isStatic
