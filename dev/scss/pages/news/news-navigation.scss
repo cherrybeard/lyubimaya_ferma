@@ -47,17 +47,19 @@
 	}
 
 	@include mq("tablet-wide") {
-		width: 100%;
+		width: auto;
 		padding-left: $padding-mobile;
 		padding-right: $padding-mobile;
+	}
 
+	@include mq("phone-wide") {
 		a {
 			font-size: 0.7rem;
 			width: 80px;
 
 			&:before {
-				width: $arrow-size + 10px;
-				height: $arrow-size - 10px;
+				width: $arrow-size - 15px;
+				height: $arrow-size - 15px;
 				top: 15px;
 			}
 
@@ -69,13 +71,6 @@
 				padding-right: $arrow-padding - 20px;
 				text-align: right;
 			}
-		}
-	}
-
-	@include mq("phablet") {
-		a:before {
-			width: $arrow-size - 15px;
-			height: $arrow-size - 15px;
 		}
 	}
 
