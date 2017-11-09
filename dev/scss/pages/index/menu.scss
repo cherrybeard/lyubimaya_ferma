@@ -1,11 +1,10 @@
 .menu {
-	background: black;
-	color: #aaa;
-	line-height: 30px;
+	color: #ddd;
+	line-height: 48px;
 	font-size: 0.6rem;
 	text-transform: uppercase;
 	letter-spacing: 0.15em;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -29,7 +28,6 @@
 
 	@include mq("phone-wide", max) {
 		overflow-x: scroll;
-		line-height: 48px;
 		-webkit-overflow-scrolling: touch;
 
 		ul {
