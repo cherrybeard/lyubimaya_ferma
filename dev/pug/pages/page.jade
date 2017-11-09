@@ -1,7 +1,10 @@
 include ../layouts/includes/page-header
 	
 section.page-content
-	unless isStatic
+	if isStatic
+		block page-content
+			p Текст страницы
+	else
 		<?php $post = get_post(); ?>
 		<?php echo apply_filters( 'the_content', $post->post_content ); ?>
 		<?php wp_reset_query(); ?>

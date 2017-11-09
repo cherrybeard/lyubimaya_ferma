@@ -4,8 +4,6 @@ unless isStatic
 	<html lang='ru'>
 
 head
-	- var cssLink = isStatic ? "style.css" : "<?php bloginfo('stylesheet_url'); ?>"
-	
 	meta(charset='UTF-8')/
 	meta(name="description" content="«Любимая ферма» создана для ценителей вкусной и здоровой еды.")/
 	meta(name="keywords" content="Любимая ферма, рынок, москва, ферма")/
@@ -14,9 +12,12 @@ head
 	meta(property="og:description" content="«Любимая ферма» создана для ценителей вкусной и здоровой еды.")/
 	meta(property="og:image" content="http://lyubimayaferma.ru/img/share.jpg")/
 	meta(property="og:url" content="http://lyubimayaferma.ru")/
+	
+	- var cssLink = isStatic ? "style.css" : "<?php bloginfo('stylesheet_url'); ?>"
 	link(rel="stylesheet", href!= cssLink)/
 	link(rel="icon" href="img/favicon.png")/
 	link(rel="apple-touch-icon-precomposed" sizes="152x152" href="img/apple-icon.png")/
+	
 	unless isStatic
 		- var title = "<?php is_front_page() ? bloginfo('name') : wp_title(''); ?>"
 	title!= title
