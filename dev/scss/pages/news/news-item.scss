@@ -6,6 +6,7 @@
 		font-family: $font-secondary;
 		padding-bottom: 10px;
 		font-size: 40px;
+		line-height: 1.2;
 	}
 
 	time {
@@ -16,6 +17,9 @@
 	}
 
 	img {
+		max-width: 100%;
+		height: auto;
+		
 		&.alignleft { float: left; }
 		&.alignright { float: right; }
 	}
