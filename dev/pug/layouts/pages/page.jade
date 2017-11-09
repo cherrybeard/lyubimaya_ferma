@@ -1,0 +1,14 @@
+block variables
+	- var indexLink = "index.html"
+
+block header
+		
+block content
+	header.page-header
+		a(href!= indexLink)
+			h2.logo Любимая ферма
+		
+	section.page-content
+		block page-content
+			
+block footer
