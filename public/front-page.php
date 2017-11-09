@@ -125,7 +125,7 @@
       <p>Каждый день с 7:00 до 21:00</p>
       <p>Москва, Носовихинское шоссе 4 <a href="https://yandex.ru/maps/-/CBUxRQbSGB">(Открыть&nbsp;в&nbsp;Яндекс.Картах)</a>
       </p>
-      <p><a href="tel:+78009567664">+7&nbsp;800&nbsp;956&nbsp;7664</a></p>
+      <p><a href="tel:+74957016080">+7&nbsp;495&nbsp;701&nbsp;6080</a></p>
     </div>
   </div>
 </footer><?php get_footer(); ?>
