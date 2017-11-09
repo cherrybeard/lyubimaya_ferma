@@ -693,6 +693,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/dev\/scss\/pages\/index\/our-life\/news-preview\/news-preview-text.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dev\/scss\/pages\/index\/our-life\/news-preview\/news-preview-text.scss",
+		"outputAbbreviatedPath": "\/dev\/scss\/pages\/index\/our-life\/css\/news-preview-text.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/dev\/scss\/pages\/index\/tenants.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -869,14 +885,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/dev\/scss\/UI\/green-button.scss": {
+	"\/dev\/scss\/ui\/green-button.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dev\/scss\/UI\/green-button.scss",
+		"inputAbbreviatedPath": "\/dev\/scss\/ui\/green-button.scss",
 		"outputAbbreviatedPath": "\/dev\/scss\/css\/green-button.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -885,14 +901,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/dev\/scss\/UI\/intro.scss": {
+	"\/dev\/scss\/ui\/intro.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dev\/scss\/UI\/intro.scss",
+		"inputAbbreviatedPath": "\/dev\/scss\/ui\/intro.scss",
 		"outputAbbreviatedPath": "\/dev\/scss\/css\/intro.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -901,14 +917,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/dev\/scss\/UI\/logo.scss": {
+	"\/dev\/scss\/ui\/logo.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dev\/scss\/UI\/logo.scss",
+		"inputAbbreviatedPath": "\/dev\/scss\/ui\/logo.scss",
 		"outputAbbreviatedPath": "\/dev\/scss\/css\/logo.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -917,14 +933,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/dev\/scss\/UI\/section-content.scss": {
+	"\/dev\/scss\/ui\/section-content.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dev\/scss\/UI\/section-content.scss",
+		"inputAbbreviatedPath": "\/dev\/scss\/ui\/section-content.scss",
 		"outputAbbreviatedPath": "\/dev\/scss\/css\/section-content.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -933,14 +949,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/dev\/scss\/UI\/text-input.scss": {
+	"\/dev\/scss\/ui\/text-input.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dev\/scss\/UI\/text-input.scss",
+		"inputAbbreviatedPath": "\/dev\/scss\/ui\/text-input.scss",
 		"outputAbbreviatedPath": "\/dev\/scss\/css\/text-input.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -949,14 +965,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/dev\/scss\/UI\/underlined.scss": {
+	"\/dev\/scss\/ui\/underlined.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dev\/scss\/UI\/underlined.scss",
+		"inputAbbreviatedPath": "\/dev\/scss\/ui\/underlined.scss",
 		"outputAbbreviatedPath": "\/dev\/scss\/css\/underlined.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
