@@ -10,6 +10,7 @@
 	left: 0;
 	right: 0;
 	z-index: 1000;
+	white-space: nowrap;
 
 	ul {
 		@extend %section-content;
@@ -22,6 +23,24 @@
 	a {
 		color: inherit;
 		display: inline-block;
-		padding: 0 0.5em;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
+
+	@include mq("phone-wide", max) {
+		overflow-x: scroll;
+
+		ul {
+			display: inline-flex;
+			width: auto;
+			padding-left: $padding-mobile;
+			padding-right: $padding-mobile;
+			max-width: none;
+		}
+
+		a {
+			padding-left: 1em;
+			padding-right: 1em;
+		}
 	}
 }
