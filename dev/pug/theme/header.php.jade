@@ -1,15 +1,1 @@
 extend ../layouts/includes/header
-
-block before
-	include ../layouts/includes/mail.php
-	doctype html
-	<html lang='ru'>
-	
-block stylesheet
-	<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
-	
-block after
-	<?php wp_head(); ?>
-	
-block body
-	<body>

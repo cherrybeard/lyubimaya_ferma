@@ -5,13 +5,13 @@
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 
-	h2 {
+	h1 {
 		@extend %underlined;
 		margin-top: 0.4em;
 	}
 
 	@include mq("phone-wide") {
-		h2 {
+		h1 {
 			font-size: 3rem;
 
 			&:after {
@@ -20,5 +20,5 @@
 			}
 		}
 	}
-	
+
 }

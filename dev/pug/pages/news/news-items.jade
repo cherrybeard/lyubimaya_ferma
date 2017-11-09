@@ -2,7 +2,8 @@ mixin news-item(image, title, date)
 	article.news-item
 		h3= title
 		time= date
-		img(src="img/news/#{image}.jpg", alt= title)
+		p
+			img(src="img/news/#{image}.jpg", alt= title)
 		block
 		
 +news-item("birthday", "День рождения рынка", "23 сентября")

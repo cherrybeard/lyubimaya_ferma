@@ -1,0 +1,9 @@
+mixin page-header(pageTitle)
+	- var indexLink = isStatic ? "index.html" : "<?php echo home_url(); ?>"
+	a(href!= indexLink)
+		h2.logo Любимая ферма
+
+	unless isStatic
+		- pageTitle = "<?php wp_title(''); ?>"
+		
+	h1!= pageTitle

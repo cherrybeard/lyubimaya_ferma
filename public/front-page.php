@@ -118,7 +118,7 @@
     </form>
   </div>
 </div>
-<footer class="footer">
+<div class="map">
   <div class="contacts-block">
     <div class="contacts"> 
       <h2>«Любимая ферма»</h2>
@@ -128,4 +128,6 @@
       <p><a href="tel:+74957016080">+7&nbsp;495&nbsp;701&nbsp;6080</a></p>
     </div>
   </div>
+</div>
+<footer class="footer"><a href="/privacy-policy">Политика конфиденциальности</a>
 </footer><?php get_footer(); ?>

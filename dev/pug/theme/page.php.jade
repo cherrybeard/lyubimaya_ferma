@@ -1,14 +1,4 @@
-extend ../layouts/pages/page
-
-block variables
-	- var indexLink = "<?php echo home_url(); ?>"
+extend ../layouts/theme
 	
-block header
-	<?php get_header(); ?>
-	
-block page-content
-	<?php $post = get_post(); ?>
-	<?php echo apply_filters( 'the_content', $post->post_content ); ?>
-	
-block footer
-	<?php get_footer(); ?>
+block content
+	include ../pages/page

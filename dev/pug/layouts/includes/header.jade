@@ -1,19 +1,27 @@
-block before
+unless isStatic
+	include mail.php
+	doctype html
+	<html lang='ru'>
 
 head
+	- var cssLink = isStatic ? "style.css" : "<?php bloginfo('stylesheet_url'); ?>"
+	
 	meta(charset='UTF-8')/
 	meta(name="description" content="«Любимая ферма» создана для ценителей вкусной и здоровой еды.")/
 	meta(name="keywords" content="Любимая ферма, рынок, москва, ферма")/
-	//- meta(property="og:title" content="Любимая ферма")/
-	//- meta(property="og:description" content="«Любимая ферма» создана для ценителей вкусной и здоровой еды.")/
-	//- meta(property="og:image" content="http://lyubimayaferma.ru/img/share.jpg")/
-	//- meta(property="og:url" content="http://lyubimayaferma.ru")//
-	block stylesheet
-		link(rel='stylesheet', href='style.css')/
+	meta(name='viewport', content='width=device-width')/
+	meta(property="og:title" content="Любимая ферма")/
+	meta(property="og:description" content="«Любимая ферма» создана для ценителей вкусной и здоровой еды.")/
+	meta(property="og:image" content="http://lyubimayaferma.ru/img/share.jpg")/
+	meta(property="og:url" content="http://lyubimayaferma.ru")/
+	link(rel="stylesheet", href!= cssLink)/
 	link(rel="icon" href="img/favicon.png")/
 	link(rel="apple-touch-icon-precomposed" sizes="152x152" href="img/apple-icon.png")/
-	meta(name='viewport', content='width=device-width')
-	title Любимая ферма
-	block after
+	- var title = isStatic ? "Любимая ферма" : "<?php is_front_page() ? bloginfo('name') : wp_title(''); ?>"
+	title!= title
+	
+	unless isStatic
+		<?php wp_head(); ?>
 
-block body
+unless isStatic
+	<body>

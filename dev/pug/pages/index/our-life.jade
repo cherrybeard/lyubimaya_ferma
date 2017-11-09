@@ -1,0 +1,13 @@
+.our-life
+	- var newsLink = isStatic ? "news.html" : "<?php echo get_post_type_archive_link( 'post' ); ?>"
+	
+	h2 Наша жизнь
+	
+	.news-previews
+		if isStatic
+			include our-life/news-previews
+		else
+			include our-life/news-previews.php
+
+	a.more-news(href!= newsLink) Еще новости
+		

@@ -1,0 +1,10 @@
+header.page-header
+	include ../layouts/includes/page-header
+	+page-header("Политика конфиденциальности")
+	
+section.page-content
+	unless isStatic
+		<?php $post = get_post(); ?>
+		<?php echo apply_filters( 'the_content', $post->post_content ); ?>
+		<?php wp_reset_query(); ?>
+			

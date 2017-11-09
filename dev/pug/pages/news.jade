@@ -1,4 +1,16 @@
-extend ../layouts/app
-
-block content
-	include ../layouts/pages/news
+header.news-header
+	include ../layouts/includes/page-header
+	+page-header("Наша жизнь")
+	
+section.news-items
+	if isStatic
+		include news/news-items
+	else
+		include news/news-items.php
+		
+.news-navigation
+	block news-navigation
+		- var prevLink = isStatic ? "javascript:void(0);" : "<?php if( get_previous_posts_link() ) : echo get_previous_posts_page_link(); endif; ?>"
+		- var nextLink = isStatic ? "javascript:void(0);" : "<?php if( get_next_posts_link() ) : echo get_next_posts_page_link(); endif; ?>"
+		a.navigation-prev(href!= prevLink) Предыдущая страница
+		a.navigation-next(href!= nextLink) Следующая страница

@@ -129,4 +129,5 @@
     </div>
   </div>
 </div>
-<footer class="footer"><a href="/privacy-policy"></a></footer><?php get_footer(); ?>
+<footer class="footer"><a href="/privacy-policy">Политика конфиденциальности</a>
+</footer><?php get_footer(); ?>
