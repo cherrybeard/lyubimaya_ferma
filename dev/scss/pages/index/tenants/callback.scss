@@ -4,9 +4,9 @@
 
 	button,
 	.text-input {
-		vertical-align: bottom;
+		vertical-align: top;
 	}
-	
+
 	button { @extend %green-button;}
 	.text-input { width: 13.5rem; }
 
