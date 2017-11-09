@@ -29,6 +29,8 @@
 
 	@include mq("phone-wide", max) {
 		overflow-x: scroll;
+		line-height: 48px;
+		-webkit-overflow-scrolling: touch;
 
 		ul {
 			display: inline-flex;

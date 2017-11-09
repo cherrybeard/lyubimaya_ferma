@@ -1,4 +1,13 @@
 <?php get_header(); ?>
+<nav class="menu">
+  <ul>
+    <li><a href="#mission" data-scroll-to=".mission">Наша миссия</a></li>
+    <li><a href="#what-we-have" data-scroll-to=".what-we-have">Что у нас есть</a></li>
+    <li><a href="#our-life" data-scroll-to=".our-life">Наша жизнь</a></li>
+    <li><a href="#tenants" data-scroll-to=".tenants">Арендаторам</a></li>
+    <li><a href="#contacts" data-scroll-to=".contacts">Контакты</a></li>
+  </ul>
+</nav>
 <header class="header">
   <h1 class="logo">Любимая ферма</h1>
   <h2>Новый формат <span>фермерского рынка</span>
