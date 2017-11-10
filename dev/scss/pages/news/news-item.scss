@@ -1,5 +1,5 @@
 .news-item {
-	@extend %section-content;
+	@extend .page-content;
 	padding-bottom: 50px;
 
 	h3 {
@@ -19,25 +19,14 @@
 	img {
 		max-width: 100%;
 		height: auto;
-		
+
 		&.alignleft { float: left; }
 		&.alignright { float: right; }
 	}
 
-	p, ul {
-		&:not(:first-child) {
-			margin-top: 1rem;
-		}
-	}
-
-	ul { padding-left: 2em; }
-
 	@include mq("tablet-wide") {
 		overflow: hidden;
-		width: 100%;
 		box-sizing: border-box;
-		padding-left: $padding-mobile;
-		padding-right: $padding-mobile;
 
 		h3 { font-size: 2rem; }
 	}

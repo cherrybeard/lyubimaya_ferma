@@ -1,0 +1,19 @@
+.page-content {
+	@extend %section-content;
+
+	p, ul {
+		&:not(:first-child) {
+			margin-top: 1rem;
+		}
+	}
+
+	ul { padding-left: 2em; }
+
+	@include mq("tablet-wide") {
+		padding-left: $padding-mobile;
+		padding-right: $padding-mobile;
+		padding-bottom: 2rem;
+		width: auto;
+	}
+
+}
