@@ -12,7 +12,7 @@
   <h1 class="logo">Любимая ферма</h1>
   <h2>Новый формат <span>фермерского рынка</span>
   </h2>
-  <p>Москва, Носовихинское шоссе 4</p>
+  <p>Москва, Носовихинское шоссе, вл.&nbsp;4</p>
 </header>
 <div class="mission">
   <div class="intro">
@@ -123,7 +123,7 @@
     <div class="contacts"> 
       <h2>«Любимая ферма»</h2>
       <p>Каждый день с 7:00 до 21:00</p>
-      <p>Москва, Носовихинское шоссе 4 <a href="https://yandex.ru/maps/-/CBUxRQbSGB">(Открыть&nbsp;в&nbsp;Яндекс.Картах)</a>
+      <p>Москва, Носовихинское шоссе, вл.&nbsp;4 <a href="https://yandex.ru/maps/-/CBUxRQbSGB">(Открыть&nbsp;в&nbsp;Яндекс.Картах)</a>
       </p>
       <p><a href="tel:+74957016080">+7&nbsp;495&nbsp;701&nbsp;6080</a></p>
     </div>
