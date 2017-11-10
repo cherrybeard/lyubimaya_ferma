@@ -12,7 +12,7 @@
   <h1 class="logo">Любимая ферма</h1>
   <h2>Новый формат <span>фермерского рынка</span>
   </h2>
-  <p>Москва, Носовихинское шоссе 4</p>
+  <p>Москва, Носовихинское шоссе, вл.&nbsp;4</p>
 </header>
 <div class="mission">
   <div class="intro">
@@ -118,12 +118,20 @@
     </form>
   </div>
 </div>
+<div class="social">
+  <div class="social-content">
+    <div class="text">
+      <h3>Будь в&nbsp;курсе</h3>
+      <p>Чтобы узнавать о&nbsp;новых поступлениях и&nbsp;акциях, читайте нас в&nbsp;соцсетях:</p><a href="https://www.facebook.com/lubimayaferma/" class="facebook">Фейсбук</a><a href="https://www.instagram.com/lubimaya_ferma/" class="instagram">Инстаграм</a>
+    </div>
+  </div>
+</div>
 <div class="map">
   <div class="contacts-block">
     <div class="contacts"> 
       <h2>«Любимая ферма»</h2>
       <p>Каждый день с 7:00 до 21:00</p>
-      <p>Москва, Носовихинское шоссе 4 <a href="https://yandex.ru/maps/-/CBUxRQbSGB">(Открыть&nbsp;в&nbsp;Яндекс.Картах)</a>
+      <p>Москва, Носовихинское шоссе, вл.&nbsp;4 <a href="https://yandex.ru/maps/-/CBUxRQbSGB">(Открыть&nbsp;в&nbsp;Яндекс.Картах)</a>
       </p>
       <p><a href="tel:+74957016080">+7&nbsp;495&nbsp;701&nbsp;6080</a></p>
     </div>
