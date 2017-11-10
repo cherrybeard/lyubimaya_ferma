@@ -1,0 +1,13 @@
+.footer {
+	@extend %section-content;
+	font-size: 0.8rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+
+	@include mq("phone-wide") {
+		width: auto;
+		padding-left: $padding-mobile;
+		padding-right: $padding-mobile;
+	}
+
+}

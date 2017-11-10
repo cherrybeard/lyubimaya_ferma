@@ -24,6 +24,7 @@
 		display: inline-block;
 		padding-left: 0.5em;
 		padding-right: 0.5em;
+		border-bottom: none;
 	}
 
 	@include mq("phone-wide", max) {

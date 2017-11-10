@@ -7,6 +7,8 @@
 	padding-bottom: 3rem;
 	text-align: center;
 
+	a { border-bottom: none; }
+
 	h1 {
 		@extend %underlined;
 		margin-top: 0.4em;
