@@ -19,9 +19,8 @@
 		}
 	}
 
-	p+p { margin-top: 0.5em; }
+	p+p { margin-top: 1em; }
 	a[href^=tel] { color: inherit; }
-
 
 	@include mq("tablet-wide", max) {
 		max-width: 18rem;

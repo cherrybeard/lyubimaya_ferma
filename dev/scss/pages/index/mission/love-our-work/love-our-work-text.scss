@@ -14,8 +14,8 @@
 		background: url('img/mission/love.jpg') center/cover no-repeat;
 	}
 
-	p + p {
-		margin-top: 1em;
+	p {
+		margin-bottom: 1em;
 	}
 
 	@include mq("tablet") {
