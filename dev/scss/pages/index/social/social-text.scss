@@ -1,0 +1,29 @@
+%social-text {
+	border: solid 3px $color-green;
+	padding: 80px 60px;
+	max-width: 540px;
+	box-sizing: border-box;
+	position: relative;
+
+	&::after {
+		$width: 540px;
+
+		content: '';
+		position: absolute;
+		width: $width;
+		height: 400px;
+		background: url(img/social/bg.jpg) center/contain no-repeat;
+		z-index: -1;
+		top: 56%;
+		right: (-$width + 60px);
+		transform: translateY(-50%);
+	}
+
+	@include mq("phone-wide", max) {
+		border: none;
+		padding: 0;
+
+		&::after { content: none; }
+	}
+
+}

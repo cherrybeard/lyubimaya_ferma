@@ -174,6 +174,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/dev\/pug\/pages\/index\/social.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dev\/pug\/pages\/index\/social.jade",
+		"outputAbbreviatedPath": "\/dev\/pug\/pages\/index\/social.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
 	"\/dev\/pug\/pages\/index\/tenants.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -791,6 +802,54 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/dev\/scss\/pages\/index\/social.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dev\/scss\/pages\/index\/social.scss",
+		"outputAbbreviatedPath": "\/dev\/scss\/pages\/css\/social.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/dev\/scss\/pages\/index\/social\/social-link.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dev\/scss\/pages\/index\/social\/social-link.scss",
+		"outputAbbreviatedPath": "\/dev\/scss\/pages\/index\/css\/social-link.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/dev\/scss\/pages\/index\/social\/social-text.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dev\/scss\/pages\/index\/social\/social-text.scss",
+		"outputAbbreviatedPath": "\/dev\/scss\/pages\/index\/css\/social-text.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/dev\/scss\/pages\/index\/tenants.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1047,6 +1106,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/dev\/scss\/ui\/small-caps.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dev\/scss\/ui\/small-caps.scss",
+		"outputAbbreviatedPath": "\/dev\/scss\/css\/small-caps.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/dev\/scss\/ui\/text-input.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1252,6 +1327,17 @@
 		"initialSize": 207474,
 		"inputAbbreviatedPath": "\/public\/img\/share.jpg",
 		"outputAbbreviatedPath": "\/public\/img\/share.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/img\/social\/bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 179647,
+		"inputAbbreviatedPath": "\/public\/img\/social\/bg.jpg",
+		"outputAbbreviatedPath": "\/public\/img\/social\/bg.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

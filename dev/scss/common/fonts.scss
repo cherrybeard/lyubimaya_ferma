@@ -27,7 +27,7 @@ h1, h2 {
 a {
 	color: $color-green;
 	text-decoration: none;
-	padding-bottom: 0.2em;
+	padding-bottom: 0.1em;
 
 	&:not([href^=tel]) {
 		border-bottom: solid 1px;

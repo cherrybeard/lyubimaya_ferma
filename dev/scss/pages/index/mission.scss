@@ -9,10 +9,7 @@
 	overflow: hidden;
 
 	h3 {
-		font-size: 0.85rem;
-		letter-spacing: 0.2em;
-		color: #aaa;
-		text-transform: uppercase;
+		@extend %small-caps;
 		margin-bottom: 15px;
 	}
 

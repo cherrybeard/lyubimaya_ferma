@@ -1,0 +1,30 @@
+%social-link {
+	$size-icon: 27px;
+	$margin-icon: 10px;
+
+	display: table;
+	color: inherit;
+	margin-left: ($size-icon + $margin-icon);
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: -($size-icon + $margin-icon);
+		transform: translateY(-50%);
+		width: $size-icon;
+		height: $size-icon;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	&.facebook {
+		&::before { background-image: url(img/social/facebook.svg); }
+	}
+
+	&.instagram {
+		&::before { background-image: url(img/social/instagram.svg); }
+	}
+}

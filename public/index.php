@@ -118,6 +118,14 @@
     </form>
   </div>
 </div>
+<div class="social">
+  <div class="social-content">
+    <div class="text">
+      <h3>Будь в&nbsp;курсе</h3>
+      <p>Чтобы узнавать о&nbsp;новых поступлениях и&nbsp;акциях, читайте нас в&nbsp;соцсетях:</p><a href="https://www.facebook.com/lubimayaferma/" class="facebook">Фейсбук</a><a href="https://www.instagram.com/lubimaya_ferma/" class="instagram">Инстаграм</a>
+    </div>
+  </div>
+</div>
 <div class="map">
   <div class="contacts-block">
     <div class="contacts"> 

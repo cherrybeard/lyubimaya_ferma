@@ -1,0 +1,30 @@
+@import "social/social-link";
+@import "social/social-text";
+
+.social {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	overflow: hidden;
+
+	h3 {
+		@extend %small-caps;
+		margin-bottom: 0.7rem;
+	}
+
+	a {
+		@extend %social-link;
+		margin-top: 1rem;
+	}
+
+	.social-content { @extend %section-content; }
+	.text { @extend %social-text; }
+
+	@include mq("phone-wide", max) {
+		.social-content {
+			width: auto;
+			padding-left: $padding-mobile;
+			padding-right: $padding-mobile;
+		}
+	}
+
+}

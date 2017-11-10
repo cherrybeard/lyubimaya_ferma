@@ -1,7 +1,7 @@
 @import "expertise/expertise-text";
 
 .expertise {
-	background-color: #fafafa;
+	background-color: $color-bg-light;
 
 	h2 {
 		@extend %underlined;
